@@ -1,0 +1,17 @@
+\select@language {magyar} \contentsline {section}{Tartalomjegyz\'ek}{4}{section*.3}%
+\select@language {magyar} \contentsline {section}{\numberline {1}Bevezetés}{5}{section.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1}A biofeedback fogalma}{5}{subsection.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2}A feladat bemutatása}{5}{subsection.1.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.3}A játékosság jelentősége}{6}{subsection.1.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.4}Egy piacon lévő megoldás bemutatása \blx@tocontentsinit {0}\cite {biofeedbacklabsRegainEnergy}}{6}{subsection.1.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.4.1}Az alap szoftverben található játékok:}{7}{subsubsection.1.4.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.5}Miben lesz más ez a projekt?}{9}{subsection.1.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.6}Kezdő lépések}{9}{subsection.1.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.7}Technológiai akadályok}{10}{subsection.1.7}%
+\select@language {magyar} \contentsline {section}{\numberline {2}Mikroműholdak bemutatása}{16}{section.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1}Modulok egy CubeSat műholdon}{16}{subsection.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3}Fedélzeti számítógép}{16}{section.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1}Fejlesztéshez szükséges eszközök}{16}{subsection.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.1}Nyomtatott áramkör fejlesztése}{17}{subsubsection.3.1.1}%
+\select@language {magyar} \contentsline {section}{\numberline {4}License}{19}{section.4}%
+\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{20}{section*.22}%

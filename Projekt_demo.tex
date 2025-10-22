@@ -1,0 +1,71 @@
+\section{Mikroműholdak bemutatása}
+Az űrtechnológia fejlődésével egyértelművé vált az ipar számára, hogy olyan szakemberekre van szükség a nagy projektekhez, akik már gyakorlottak legalább minimális szinten a műholdfejlesztés folyamatainak egy részében. A 2000-es évek elején Robert Twiggs, amerikai professzor javaslatára egységes méret-rendszert hoztak létre a kis műholdak számára. Így alakult ki a Twiggs-elv, mely alapján az egységnyi kis műhold mérete $10cm\times10cm\times10cm$, tömege maximum $1kg$. A kialakításból adódóan ezeket CubeSat-nek kezdték el becézni. Mivel egységnyi méretet szabtak meg, így könnyen skálázhatóvá vált, hogy mekkora mikroműholdat lehet készíteni adott célra.
+
+Szakdolgozatom témájaként egy ilyen CubeSat műhold fedélzeti számítógépét kezdtem el fejleszteni hardvertől szoftverig. A folyamat során inspirált az elérni kívánt cél, a már meglévő magyar sikerek és a mikrovezérlők programozása iránti kíváncsiságom is~\cite{masat-origo}.
+
+\subsection{Modulok egy CubeSat műholdon}
+Egy CubeSat műholdnak több felépítő egysége van, melyek közül kritikus elemek a kommunikációs modul, az energiaellátásért felelős napelemek és tápegység, illetve a mindent összekötő fedélzeti számítógép (OBC = On Board Computer).
+
+Mindezek mellett szükséges minimum egy, valamiféle kísérletet vagy egyéb funkcionalitást megvalósító egység is annak érdekében, hogy ne csak kommunikálni lehessen a műholddal, hanem 
+legyen valami haszna is. %Úgy írnám, hogy rentábilis legyen. Szeretem a kőművesnyelvet és művelem is, egy szakdoga ennél egy hajszállal (nem többel) fennköltebb.
+Mivel szakdolgozatomban az OBC-vel foglalkoztam, így azon modult fejtem ki jobban a következőekben.
+
+%Ide jobban ki lehetne fejteni, akár egy szép ábrával, hogy mik vannak egy műholdban, mikkel kommunikál egy OBC.
+
+\Aref{fig:obcfeladatok}. ábra foglalja össze a legfőbb feladatokat.
+
+\begin{figure}
+        \centering
+        \begin{adjustbox}{width=\textwidth} % Scale the forest to fit text width
+\begin{forest}
+for tree={
+  grow'=south, % Children grow downwards
+  align=center, % Center-align text in nodes
+  edge path={
+    \noexpand\path [draw, \forestoption{edge}] (!u.parent anchor) -- (.child anchor)\forestoption{edge label};
+  },
+  inner sep=2pt, % Padding inside nodes
+  l sep+=0.5cm, % Vertical spacing between levels
+  s sep+=0.5cm % Horizontal spacing between siblings
+}
+[On-Board Computer
+  [Kommunikáció
+    [Csomagküldtés
+      [Csomagküldtés
+        [Csomagküldtés]
+      ]
+      [Csomagküldtés
+        [Csomagküldtés]
+      ]
+    ]
+    [Trials during the test
+      [Appearance of the stimuli
+        [Time series for each epoch]
+      ]
+      [Answer to the stimuli
+        [Time series for each epoch]
+      ]
+    ]
+  ]
+  [Recordings from the  test
+        [\{\ldots\}]
+  ]
+]
+\end{forest}
+\end{adjustbox}
+        \caption{Az OBC feladatai}
+        \label{fig:obcfeladatok}
+\end{figure}
+
+
+
+\section{Fedélzeti számítógép}
+A fedélzeti számítógép a lelke minden űreszköznek, akárcsak az újabb gépjárműveknek~is.
+
+Az OBC időzíti a perifériák működését, ellenőrzi azok működőképességét és felel a műhold moduljainak összhangban tartásáért. Mindezek mellett adatokat gyűjt, melyek alapján optimalizálni lehet a működést, későbbi küldetésekhez szerezhetnek a fejlesztők/kutatók további információkat.
+
+\subsection{Fejlesztéshez szükséges eszközök}
+A fejlesztés két nagyobb fázisra bontható szét. Az első fázisban a hardvert kellett megtervezni, melyhez a KiCad~8.0~\cite{kicad} ingyenes tervezőprogramot használtam. Miután megérkeztek az alkatrészek és a lész nyomtatott áramkör, kézi forrasztással helyére illesztettem az alkatrészeket. Az áramkör \aref{fig:kapcsolasi_rajz}.~ábrán látható.
+
+\subsubsection{Nyomtatott áramkör fejlesztése}
+

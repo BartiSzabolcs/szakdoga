@@ -1,0 +1,1133 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{BIOFEEDBACK-OVERVIEW}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=af193b6238cef5dcd2fbc0af5ee0c070}{%
+           family={McKee},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cleveland Clinic Journal of Medicine}%
+      }
+      \strng{namehash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{fullhash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{fullhashraw}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{bibnamehash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{authorbibnamehash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{authornamehash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{authorfullhash}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \strng{authorfullhashraw}{af193b6238cef5dcd2fbc0af5ee0c070}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biofeedback involves the monitoring and use of physiologic information to teach patients to modify specific physiologic functions. Common modalities for biofeedback include surface electromyography, respiration rate and depth, skin surface temperature, cardiovascular reactivity, and electrodermal response. Clinical biofeedback therapy broadly involves either the direct feedback learning model or the therapeutic/stress-management/biofeedback model, which emphasizes the need to understand each patient as an individual. Biofeedback interventions have been deemed efficacious or probably efficacious in treating a number of medical disorders, and are increasingly embraced by the public as well as by health care providers and payors.}
+      \field{issn}{0891-1150}
+      \field{journaltitle}{Cleveland Clinic Journal of Medicine}
+      \field{number}{3 suppl 2}
+      \field{title}{Biofeedback: An overview in the context of heart-brain medicine}
+      \field{volume}{75}
+      \field{year}{2008}
+      \field{pages}{S31\bibrangedash S34}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb https://www.ccjm.org/content/75/3_suppl_2/S31.full.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ccjm.org/content/75/3_suppl_2/S31
+      \endverb
+      \verb{url}
+      \verb https://www.ccjm.org/content/75/3_suppl_2/S31
+      \endverb
+    \endentry
+    \entry{FRANK-CATEGORIES-OF-EFFICACY}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=37e9bc0d73bf1a8596b54f31b73a62bf}{%
+           family={Frank},
+           familyi={F\bibinitperiod},
+           given={Dana\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2e9f1f9edf3cb4647feca0ada65c9a38}{%
+           family={Khorshid},
+           familyi={K\bibinitperiod},
+           given={Lamees},
+           giveni={L\bibinitperiod}}}%
+        {{hash=edde9ced45ef8dea6ca1814ad3482070}{%
+           family={Kiffer},
+           familyi={K\bibinitperiod},
+           given={Jerome\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2c93e2302a2f7feace3b9471cb461a0b}{%
+           family={Moravec},
+           familyi={M\bibinitperiod},
+           given={Christine\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=af193b6238cef5dcd2fbc0af5ee0c070}{%
+           family={McKee},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{47a91d108fc42a5bec66cc5934ce96fb}
+      \strng{fullhash}{befcc0d7f195371a3269702d6548b1a0}
+      \strng{fullhashraw}{befcc0d7f195371a3269702d6548b1a0}
+      \strng{bibnamehash}{47a91d108fc42a5bec66cc5934ce96fb}
+      \strng{authorbibnamehash}{47a91d108fc42a5bec66cc5934ce96fb}
+      \strng{authornamehash}{47a91d108fc42a5bec66cc5934ce96fb}
+      \strng{authorfullhash}{befcc0d7f195371a3269702d6548b1a0}
+      \strng{authorfullhashraw}{befcc0d7f195371a3269702d6548b1a0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biofeedback is a mind-body technique in which individuals learn how to modify their physiology for the purpose of improving physical, mental, emotional and spiritual health. Much like physical therapy, biofeedback training requires active participation on the part of patients and often regular practice between training sessions. Clinical biofeedback may be used to manage disease symptoms as well as to improve overall health and wellness through stress management training. Research has shown that biofeedback interventions are efficacious in treating a variety of medical conditions, and many Americans are turning to biofeedback and other less traditional therapies for their routine healthcare.Clinical biofeedback training is growing increasingly popular in the USA, as many people are seeking out relatively new approaches to healthcare. This article provides an overview of clinical biofeedback training, outlines two models of training, details research which has established how effective biofeedback is in patients with a given disease, and describes who should be referred for biofeedback training.}
+      \field{journaltitle}{Ment. Health Fam. Med.}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Biofeedback in medicine: who, when, why and how?}
+      \field{volume}{7}
+      \field{year}{2010}
+      \field{pages}{85\bibrangedash 91}
+      \range{pages}{7}
+    \endentry
+    \entry{BRITTON-EEG-INTRO}{incollection}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=b5e111df3c80a76a16ebd698c1e570b8}{%
+           family={Britton},
+           familyi={B\bibinitperiod},
+           given={Jeffrey\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=578f84f00006fccb062b3a54da060754}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=ab598d20324b13d0dd28203f98185176}{%
+           family={Hopp},
+           familyi={H\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=70799248d86613495a8b4472a47af60a}{%
+           family={St.\bibnamedelimi Louis},
+           familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Erik\bibnamedelima K.},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=578f84f00006fccb062b3a54da060754}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago}%
+      }
+      \list{publisher}{1}{%
+        {American Epilepsy Society}%
+      }
+      \strng{namehash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{fullhash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{fullhashraw}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{bibnamehash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{authorbibnamehash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{authornamehash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{authorfullhash}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{authorfullhashraw}{fb178f8f6c67c80637daa4f5fb0e9806}
+      \strng{editorbibnamehash}{7183ef9e5e3fabb5d5181ad7c888eb96}
+      \strng{editornamehash}{7183ef9e5e3fabb5d5181ad7c888eb96}
+      \strng{editorfullhash}{7183ef9e5e3fabb5d5181ad7c888eb96}
+      \strng{editorfullhashraw}{7183ef9e5e3fabb5d5181ad7c888eb96}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Electroencephalography ({EEG}): An Introductory Text and Atlas of Normal and Abnormal Findings in Adults, Children, and Infants}
+      \field{chapter}{Appendix 1}
+      \field{note}{Available from: \url{https://www.ncbi.nlm.nih.gov/books/NBK390351}}
+      \field{title}{The Scientific Basis of {EEG}: Neurophysiology of {EEG} Generation in the Brain}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK390351
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK390351
+      \endverb
+    \endentry
+    \entry{EMG-DEF}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=fa514e234fd32663424683acc458b773}{%
+           family={Milosevic},
+           familyi={M\bibinitperiod},
+           given={Bojan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=338f511b01a74b62b47b7fa5d90bb8eb}{%
+           family={Farella},
+           familyi={F\bibinitperiod},
+           given={Elisabetta},
+           giveni={E\bibinitperiod}}}%
+        {{hash=827269a2d37dfe60be4b8a7adaa9d625}{%
+           family={Benatti},
+           familyi={B\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{fullhash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{fullhashraw}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{bibnamehash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{authorbibnamehash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{authornamehash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{authorfullhash}{64a43d3d07a639d642c930f07ba9ad54}
+      \strng{authorfullhashraw}{64a43d3d07a639d642c930f07ba9ad54}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hand gesture recognition based on myoelectric (EMG) signals is an innovative approach for the development of intuitive interaction devices, ranging from poliarticulated prosthetic hands to intuitive robot and mobile interfaces. Their study and development in controlled environments provides promising results, but effective real-world adoption is still limited due to reliability problems, such as motion artifacts and arm posture, temporal variability and issues caused by the re-positioning of sensors at each use. In this work, we present an EMG dataset collected with the aim to explore postural and temporal variability in the recognition of arm gestures. Its collection of gestures executed in 4 arm postures over 8 days allows to evaluate the impact of such variability on classification performance. We implemented and tested State-of-the-Art (SoA) recognition approaches analyzing the impact of different training strategies. Moreover, we compared the computational and memory requirements of the considered algorithms, providing an additional evaluation criteria useful for real-time implementation. Results show a decrease in the recognition of inter-posture and inter-day gestures up to 20\%. The provided dataset will allow further exploration of such effects and the development of effective training and recognition strategies.}
+      \field{booktitle}{2018 7th IEEE International Conference on Biomedical Robotics and Biomechatronics (Biorob)}
+      \field{issn}{2155-1782}
+      \field{month}{8}
+      \field{title}{Exploring Arm Posture and Temporal Variability in Myoelectric Hand Gesture Recognition}
+      \field{year}{2018}
+      \field{pages}{1032\bibrangedash 1037}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/BIOROB.2018.8487838
+      \endverb
+      \keyw{Training;Electromyography;Testing;Sensors;Reliability;Gesture recognition;Electrodes}
+    \endentry
+    \entry{EMG-VS-EEG}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=a31608ab8e2387fce1215457d321f561}{%
+           family={Bakhshayesh},
+           familyi={B\bibinitperiod},
+           given={Ali\bibnamedelima Reza},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2ad445b4eb835841ae5f105a1449999a}{%
+           family={Hänsch},
+           familyi={H\bibinitperiod},
+           given={Sylvana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b8b8af76555eea1b86f76c1e22f5a418}{%
+           family={Wyschkon},
+           familyi={W\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1b2f874142c2a3ce0d032ea755e76de3}{%
+           family={Rezai},
+           familyi={R\bibinitperiod},
+           given={Mohammad\bibnamedelima Javad},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9df9c2d05edcc2785ec1fbc14f7b2334}{%
+           family={Esser},
+           familyi={E\bibinitperiod},
+           given={Günter},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{cbd631f5cbbb140661d267da69812ff2}
+      \strng{fullhash}{4d3052315531f15bd54cd9f19671a4fc}
+      \strng{fullhashraw}{4d3052315531f15bd54cd9f19671a4fc}
+      \strng{bibnamehash}{cbd631f5cbbb140661d267da69812ff2}
+      \strng{authorbibnamehash}{cbd631f5cbbb140661d267da69812ff2}
+      \strng{authornamehash}{cbd631f5cbbb140661d267da69812ff2}
+      \strng{authorfullhash}{4d3052315531f15bd54cd9f19671a4fc}
+      \strng{authorfullhashraw}{4d3052315531f15bd54cd9f19671a4fc}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1435-165X}
+      \field{journaltitle}{European Child \& Adolescent Psychiatry}
+      \field{month}{8}
+      \field{number}{9}
+      \field{title}{Neurofeedback in ADHD: a single-blind randomized controlled trial}
+      \field{volume}{20}
+      \field{year}{2011}
+      \field{pages}{481\bibrangedash 491}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00787-011-0208-y
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s00787-011-0208-y
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s00787-011-0208-y
+      \endverb
+    \endentry
+    \entry{EMG-STRESS}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=151be81634d379d4470c8717eb8a10f8}{%
+           family={Pourmohammadi},
+           familyi={P\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=df6b233efaa19037f29b0ddd068f3202}{%
+           family={Maleki},
+           familyi={M\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{fullhash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{fullhashraw}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{bibnamehash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{authorbibnamehash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{authornamehash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{authorfullhash}{8d8d41ffbc854ef7691d38d1705aff84}
+      \strng{authorfullhashraw}{8d8d41ffbc854ef7691d38d1705aff84}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0169-2607}
+      \field{journaltitle}{Computer Methods and Programs in Biomedicine}
+      \field{month}{9}
+      \field{title}{Stress detection using ECG and EMG signals: A comprehensive study}
+      \field{volume}{193}
+      \field{year}{2020}
+      \field{pages}{105482}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cmpb.2020.105482
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.cmpb.2020.105482
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.cmpb.2020.105482
+      \endverb
+    \endentry
+    \entry{EMG-CONCENTRATION}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ff8b08b2acd4a25e69a9e1703c463627}{%
+           family={Ay},
+           familyi={A\bibinitperiod},
+           given={Ayse\bibnamedelima Nur},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=6a86226f331cec3065dda4acd12ea024}{%
+           family={Yildiz},
+           familyi={Y\bibinitperiod},
+           given={Mustafa\bibnamedelima Zahid},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{fullhash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{fullhashraw}{6c663e2253815eabf0adb3c87d684863}
+      \strng{bibnamehash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{authorbibnamehash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{authornamehash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{authorfullhash}{6c663e2253815eabf0adb3c87d684863}
+      \strng{authorfullhashraw}{6c663e2253815eabf0adb3c87d684863}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1532-0634}
+      \field{journaltitle}{Concurrency and Computation: Practice and Experience}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{The performance of an electromyography‐based deep neural network classifier for external and internal focus instructions}
+      \field{volume}{35}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1002/cpe.7470
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1002/cpe.7470
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/cpe.7470
+      \endverb
+    \endentry
+    \entry{BREATHING-VS-STRESS}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=649ddba8db061712a943d6fdd44f9220}{%
+           family={Fincham},
+           familyi={F\bibinitperiod},
+           given={Guy\bibnamedelima William},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=66a0c323f9b34ee179b01ddf4bf446cc}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2e67c941da5ed29ccac91af165ac7aef}{%
+           family={Montero-Marin},
+           familyi={M\bibinithyphendelim M\bibinitperiod},
+           given={Jesus},
+           giveni={J\bibinitperiod}}}%
+        {{hash=93cad7b4f5b68f5d4e32e4ee4760c9dd}{%
+           family={Cavanagh},
+           familyi={C\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{ccac1a2daaf8d117138c95529f1f8034}
+      \strng{fullhash}{4b5bdfa971baed399b018f4625a08ba1}
+      \strng{fullhashraw}{4b5bdfa971baed399b018f4625a08ba1}
+      \strng{bibnamehash}{ccac1a2daaf8d117138c95529f1f8034}
+      \strng{authorbibnamehash}{ccac1a2daaf8d117138c95529f1f8034}
+      \strng{authornamehash}{ccac1a2daaf8d117138c95529f1f8034}
+      \strng{authorfullhash}{4b5bdfa971baed399b018f4625a08ba1}
+      \strng{authorfullhashraw}{4b5bdfa971baed399b018f4625a08ba1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Effect of breathwork on stress and mental health: A meta-analysis of randomised-controlled trials}
+      \field{volume}{13}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1038/s41598-022-27247-y
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1038/s41598-022-27247-y
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/s41598-022-27247-y
+      \endverb
+    \endentry
+    \entry{PHYSIOLOGICAL-SIGH}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=fb7baf90bcf63ca83a5b9ceab9a2bf6e}{%
+           family={Balban},
+           familyi={B\bibinitperiod},
+           given={Melis\bibnamedelima Yilmaz},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e7e91548885195aa2b09b02c7c55321f}{%
+           family={Neri},
+           familyi={N\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=666ddfa4951872566af2f89785c64d3f}{%
+           family={Kogon},
+           familyi={K\bibinitperiod},
+           given={Manuela\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5e7c3b28259ab6d53fb9114b0fbc91d9}{%
+           family={Weed},
+           familyi={W\bibinitperiod},
+           given={Lara},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0870a54c0e4ff55df2ef406d57449f0b}{%
+           family={Nouriani},
+           familyi={N\bibinitperiod},
+           given={Bita},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4fdc504415c6cacb901975f2029e1247}{%
+           family={Jo},
+           familyi={J\bibinitperiod},
+           given={Booil},
+           giveni={B\bibinitperiod}}}%
+        {{hash=25a47fd0af77e757961388264778094b}{%
+           family={Holl},
+           familyi={H\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod}}}%
+        {{hash=afee8e9fdcb9fd3b48c2512ca02c556c}{%
+           family={Zeitzer},
+           familyi={Z\bibinitperiod},
+           given={Jamie\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e7f61daef954372271c9ca4dbe3ba75c}{%
+           family={Spiegel},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=44e64533dade942b790f6b36c5fca484}{%
+           family={Huberman},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{8c74e7a4e96b6ce6b99879433685bd86}
+      \strng{fullhash}{101bec254dea0b9f8ec8506df504ebce}
+      \strng{fullhashraw}{101bec254dea0b9f8ec8506df504ebce}
+      \strng{bibnamehash}{8c74e7a4e96b6ce6b99879433685bd86}
+      \strng{authorbibnamehash}{8c74e7a4e96b6ce6b99879433685bd86}
+      \strng{authornamehash}{8c74e7a4e96b6ce6b99879433685bd86}
+      \strng{authorfullhash}{101bec254dea0b9f8ec8506df504ebce}
+      \strng{authorfullhashraw}{101bec254dea0b9f8ec8506df504ebce}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2666-3791}
+      \field{journaltitle}{Cell Reports Medicine}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Brief structured respiration practices enhance mood and reduce physiological arousal}
+      \field{volume}{4}
+      \field{year}{2023}
+      \field{pages}{100895}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.xcrm.2022.100895
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.xcrm.2022.100895
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.xcrm.2022.100895
+      \endverb
+    \endentry
+    \entry{STRESS-VS-CONCENTRATION}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=a03d7b22c12c8487be9d75c10f33730c}{%
+           family={Reyes},
+           familyi={R\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2d1f36fd850406c59b60be7fd1329825}{%
+           family={Vivanco-Carlevari},
+           familyi={V\bibinithyphendelim C\bibinitperiod},
+           given={Anastassia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6c83e0aa658e7ce7d4396a1d5c7af38b}{%
+           family={Medina},
+           familyi={M\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=62f09d16955742e38d2ed2f2309ae3a8}{%
+           family={Manosalva},
+           familyi={M\bibinitperiod},
+           given={Carolina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=420e594e3092401ae40ed0430917cc03}{%
+           family={Gardelle},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=ec1ee92594fa20dc85e03398b94713a7}{%
+           family={Sackur},
+           familyi={S\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9deb0b4cedb32895ec8d18cc7cbdf335}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Jaime\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{0a62879f389927837e8746c5932e1a44}
+      \strng{fullhash}{eceee33f2eeb90e4efac00e0aa2334be}
+      \strng{fullhashraw}{eceee33f2eeb90e4efac00e0aa2334be}
+      \strng{bibnamehash}{0a62879f389927837e8746c5932e1a44}
+      \strng{authorbibnamehash}{0a62879f389927837e8746c5932e1a44}
+      \strng{authornamehash}{0a62879f389927837e8746c5932e1a44}
+      \strng{authorfullhash}{eceee33f2eeb90e4efac00e0aa2334be}
+      \strng{authorfullhashraw}{eceee33f2eeb90e4efac00e0aa2334be}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Hydrocortisone decreases metacognitive efficiency independent of perceived stress}
+      \field{volume}{10}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1038/s41598-020-71061-3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1038/s41598-020-71061-3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/s41598-020-71061-3
+      \endverb
+    \endentry
+    \entry{BARTH-ADHD-TRAPEZIUS}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=3f79b00b00cb56011743504ce30d9455}{%
+           family={Barth},
+           familyi={B\bibinitperiod},
+           given={Beatrix},
+           giveni={B\bibinitperiod}}}%
+        {{hash=504edb2c6f5eb23d6035ee74af813d8d}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f36f87ff1e275fd3734c68b9d9c18723}{%
+           family={Strehl},
+           familyi={S\bibinitperiod},
+           given={Ute},
+           giveni={U\bibinitperiod}}}%
+        {{hash=810123315396d46d49be0325b26983a3}{%
+           family={Fallgatter},
+           familyi={F\bibinitperiod},
+           given={Andreas\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8fcb1403324fa2472464b7d3e55556fa}{%
+           family={Ehlis},
+           familyi={E\bibinitperiod},
+           given={Ann-Christine},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf3d679ccb29b7b00a2310b741985dc5}
+      \strng{fullhash}{4e39be498b6b602da08c47ae54c5b80d}
+      \strng{fullhashraw}{4e39be498b6b602da08c47ae54c5b80d}
+      \strng{bibnamehash}{cf3d679ccb29b7b00a2310b741985dc5}
+      \strng{authorbibnamehash}{cf3d679ccb29b7b00a2310b741985dc5}
+      \strng{authornamehash}{cf3d679ccb29b7b00a2310b741985dc5}
+      \strng{authorfullhash}{4e39be498b6b602da08c47ae54c5b80d}
+      \strng{authorfullhashraw}{4e39be498b6b602da08c47ae54c5b80d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objective The present study aimed at revealing neurophysiological effects induced by electromyography (EMG) based biofeedback, considered as a semi-active control condition in neurofeedback studies, in adult attention-deficit/hyperactivity disorder (ADHD) patients. Methods 20 adult ADHD patients trained their muscle activity in the left and right supraspinatus muscle over the course of 30 EMG biofeedback sessions. Changes induced by the EMG feedback were evaluated at a clinical and neurophysiological level; additionally, the relation between changes in EEG activity recorded at the vertex over the training course and changes of symptom severity over the treatment course were assessed in order to investigate the mechanisms underlying clinical effects of EMG biofeedback. Results Participants showed significant behavioral improvements on a self-rating scale. There was a significant increase in alpha power, but no significant changes in the delta frequency range; changes in the theta and beta frequency range were not significant after adjustment for multiple comparisons. No statistically significant correlation was found between changes in EEG frequency bands and changes in ADHD symptoms. Conclusions The current results assessed by means of a single-electrode EEG constitute a starting point regarding a clearer understanding of mechanisms underlying clinical effects of EMG biofeedback. Although we did not reveal systematic effects induced by EMG feedback on brain activity it remains an open question whether EMG biofeedback induces changes in brain regions or parameters we did not gather in the present study (e.g. motor cortex).}
+      \field{issn}{0166-4328}
+      \field{journaltitle}{Behavioural Brain Research}
+      \field{title}{EMG biofeedback training in adult attention-deficit/hyperactivity disorder: An active (control) training?}
+      \field{volume}{329}
+      \field{year}{2017}
+      \field{pages}{58\bibrangedash 66}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.bbr.2017.04.021
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166432817301638
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166432817301638
+      \endverb
+      \keyw{Adult ADHD,Therapy,Biofeedback,EMG,EEG}
+    \endentry
+    \entry{HRV-STRESS}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6367f9472b71a768c370e38de4834c1b}{%
+           family={Goessl},
+           familyi={G\bibinitperiod},
+           given={V.\bibnamedelimi C.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=e9d4d6fe7b55be9b64b3ff390f23a69f}{%
+           family={Curtiss},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=343136b4d1ba34233e458787624323c5}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{fullhash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{fullhashraw}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{bibnamehash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{authorbibnamehash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{authornamehash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{authorfullhash}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \strng{authorfullhashraw}{61d217e66dad17cd0b5ea7f9bd6d0b39}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Medicine}
+      \field{number}{15}
+      \field{title}{The effect of heart rate variability biofeedback training on stress and anxiety: a meta-analysis}
+      \field{volume}{47}
+      \field{year}{2017}
+      \field{pages}{2578\bibrangedash 2586}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1017/S0033291717001003
+      \endverb
+    \endentry
+    \entry{HRV-EXECUTIVE-FUNCTION}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=daa67293dc81bb23919d00934cdca2d0}{%
+           family={Tinello},
+           familyi={T\bibinitperiod},
+           given={Doriana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4da2b4c8ca509e84b10a9e20fc80b3ae}{%
+           family={Kliegel},
+           familyi={K\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1794df22d19eca36882fcf6159789627}{%
+           family={Zuber},
+           familyi={Z\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{152218d5bbee07699a359493875a2885}
+      \strng{fullhash}{152218d5bbee07699a359493875a2885}
+      \strng{fullhashraw}{152218d5bbee07699a359493875a2885}
+      \strng{bibnamehash}{152218d5bbee07699a359493875a2885}
+      \strng{authorbibnamehash}{152218d5bbee07699a359493875a2885}
+      \strng{authornamehash}{152218d5bbee07699a359493875a2885}
+      \strng{authorfullhash}{152218d5bbee07699a359493875a2885}
+      \strng{authorfullhashraw}{152218d5bbee07699a359493875a2885}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2509-3304}
+      \field{journaltitle}{Journal of Cognitive Enhancement}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{Does Heart Rate Variability Biofeedback Enhance Executive Functions Across the Lifespan? A Systematic Review}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{126\bibrangedash 142}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s41465-021-00218-3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s41465-021-00218-3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s41465-021-00218-3
+      \endverb
+    \endentry
+    \entry{FRONTAL-BIOFEEDBACK}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=87c5c500e36c5f617c4f084470ef2d7e}{%
+           family={Braud},
+           familyi={B\bibinitperiod},
+           given={Lendell\bibnamedelima Williams},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{fullhash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{fullhashraw}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{bibnamehash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{authorbibnamehash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{authornamehash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{authorfullhash}{87c5c500e36c5f617c4f084470ef2d7e}
+      \strng{authorfullhashraw}{87c5c500e36c5f617c4f084470ef2d7e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-3270}
+      \field{journaltitle}{Biofeedback and Self-Regulation}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{The effects of frontal EMG biofeedback and progressive relaxation upon hyperactivity and its behavioral concomitants}
+      \field{volume}{3}
+      \field{year}{1978}
+      \field{pages}{69\bibrangedash 89}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/bf00998565
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/BF00998565
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/BF00998565
+      \endverb
+    \endentry
+    \entry{JAW-STRESS}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=f6f820408cb865d20eb5b095b56c7d80}{%
+           family={Zieliński},
+           familyi={Z\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ebf156f9d853be7cba8b0cae830c70fa}{%
+           family={Ginszt},
+           familyi={G\bibinitperiod},
+           given={Michał},
+           giveni={M\bibinitperiod}}}%
+        {{hash=01b0a996e7fbc6993215d4a191fdf5c6}{%
+           family={Zawadka},
+           familyi={Z\bibinitperiod},
+           given={Magdalena},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a932237af2582c7506ce6cda6750f6d4}{%
+           family={Rutkowska},
+           familyi={R\bibinitperiod},
+           given={Katarzyna},
+           giveni={K\bibinitperiod}}}%
+        {{hash=52ed6ba40a31b6387f22085285eb7080}{%
+           family={Podstawka},
+           familyi={P\bibinitperiod},
+           given={Zuzanna},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8e19991787dd21e38b2e871d62d9bf76}{%
+           family={Szkutnik},
+           familyi={S\bibinitperiod},
+           given={Jacek},
+           giveni={J\bibinitperiod}}}%
+        {{hash=466886cd796574b31f7ed6687e539e21}{%
+           family={Majcher},
+           familyi={M\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0432ac2b1ae0d77581fae0b2b49830ed}{%
+           family={Gawda},
+           familyi={G\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ccdbe52bcbac517b1086200fb9f9a0d}
+      \strng{fullhash}{b7492f7417d0524a3ca132fac4a49a76}
+      \strng{fullhashraw}{b7492f7417d0524a3ca132fac4a49a76}
+      \strng{bibnamehash}{8ccdbe52bcbac517b1086200fb9f9a0d}
+      \strng{authorbibnamehash}{8ccdbe52bcbac517b1086200fb9f9a0d}
+      \strng{authornamehash}{8ccdbe52bcbac517b1086200fb9f9a0d}
+      \strng{authorfullhash}{b7492f7417d0524a3ca132fac4a49a76}
+      \strng{authorfullhashraw}{b7492f7417d0524a3ca132fac4a49a76}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of the study was to analyze the relationship between stress measured by the perceived stress scale (PSS-10) questionnaire and masticatory muscle activity. Experimental design assumed the study of healthy young women without temporomandibular disorders, dividing them into three groups depending on the result of the stress level and then comparing these groups in terms of bioelectrical activity of the masticatory muscles. After the exclusion criteria were applied, 63 female students (mean age: 22.3 ± 2.4 years) from Medical University of Lublin were included in the study. The subjects were then divided into 3 groups: with low (n = 18), medium (n = 18) and high stress level (n = 27), according to PSS-10 results. Resting and functional activity of temporalis anterior (TA) and masseter (MM) muscles were measured by electromyograph BioEMG III. There were statistically significant effects of group on the absolute value of asymmetry index (AsI) of TA and MM during maximum voluntary clenching on dental cotton rollers (both p = 0.02). Post hoc analysis shows that there were statistically significant differences between medium and high stress groups in AsI TA (p = 0.01) and between low and high stress groups in AsI MM (p = 0.02). Perceived stress measured by PSS-10 questionnaire seems to be associated with changes in muscular asymmetry in functional clenching activity.}
+      \field{issn}{2077-0383}
+      \field{journaltitle}{Journal of Clinical Medicine}
+      \field{number}{16}
+      \field{title}{The Relationship between Stress and Masticatory Muscle Activity in Female Students}
+      \field{volume}{10}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/jcm10163459
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2077-0383/10/16/3459
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2077-0383/10/16/3459
+      \endverb
+    \endentry
+    \entry{GAMIFICATION}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d8d811af5b74abad8cd6b169ab55b1dd}{%
+           family={Sailer},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bb0bec3339b2493a085309d5f6cd8d4f}{%
+           family={Homner},
+           familyi={H\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{fullhash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{fullhashraw}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{bibnamehash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{authorbibnamehash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{authornamehash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{authorfullhash}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \strng{authorfullhashraw}{5f62c1309f5dd4015ea9ffd2667f3f72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-336X}
+      \field{journaltitle}{Educational Psychology Review}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{The Gamification of Learning: a Meta-analysis}
+      \field{volume}{32}
+      \field{year}{2019}
+      \field{pages}{77\bibrangedash 112}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1007/s10648-019-09498-w
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s10648-019-09498-w
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s10648-019-09498-w
+      \endverb
+    \endentry
+    \entry{SPACED-REPETITION}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1b133e631caf652bb94c60d959aa6f8}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sean\bibnamedelimb H.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{fullhash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{fullhashraw}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{bibnamehash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{authorbibnamehash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{authornamehash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{authorfullhash}{c1b133e631caf652bb94c60d959aa6f8}
+      \strng{authorfullhashraw}{c1b133e631caf652bb94c60d959aa6f8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2372-7330}
+      \field{journaltitle}{Policy Insights from the Behavioral and Brain Sciences}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Spaced Repetition Promotes Efficient and Effective Learning: Policy Implications for Instruction}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{pages}{12\bibrangedash 19}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1177/2372732215624708
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1177/2372732215624708
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1177/2372732215624708
+      \endverb
+    \endentry
+    \entry{KAHOOT}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0afe22b8cf442edb1798d54f023ee77b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Alf\bibnamedelima Inge},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=bd1c75237c1a2e50d0c2fc240272f655}{%
+           family={Tahir},
+           familyi={T\bibinitperiod},
+           given={Rabail},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{fullhash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{fullhashraw}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{bibnamehash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{authorbibnamehash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{authornamehash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{authorfullhash}{f71538e0fed00dcef079687d22ec80c2}
+      \strng{authorfullhashraw}{f71538e0fed00dcef079687d22ec80c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kahoot! is a game-based learning platform used to review students' knowledge, for formative assessment or as a break from traditional classroom activities. It is among the most popular game-based learning platforms, with 70 million monthly active unique users and used by 50\% of US K-12 students. Since the platform was released in 2013, many studies have been published on the effect of using Kahoot! in the classroom, but so far, no systematic analysis of the results. This article presents the results of a literature review on the effect of using Kahoot! for learning and, more specifically, on how Kahoot! affects learning performance, classroom dynamics, students' and teachers' attitudes and perceptions, and students' anxiety. The literature review includes 93 studies, and the main conclusion is that Kahoot! can have a positive effect on learning performance, classroom dynamics, students' and teachers' attitudes, and students' anxiety. However, there are also studies where Kahoot! has little or no effect. The main challenges mentioned by students include technical problems such as unreliable internet connections, hard to read questions and answers on a projected screen, not being able to change answer after submission, stressful time-pressure for giving answers, not enough time to answer, afraid of losing, and hard to catch up if an incorrect answer had been given. Further, the main challenges mentioned by teachers include getting the difficulty level of questions and answers right, problems related to network connectivity, scoring based on how quickly the students answer reducing student reflection and cause some students to guess without thinking, that some students can have a problem with failing a quiz, and some teachers find it challenging to use the technology.}
+      \field{issn}{0360-1315}
+      \field{journaltitle}{Computers \& Education}
+      \field{title}{The effect of using Kahoot! for learning – A literature review}
+      \field{volume}{149}
+      \field{year}{2020}
+      \field{pages}{103818}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compedu.2020.103818
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0360131520300208
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0360131520300208
+      \endverb
+      \keyw{Game-based learning,Engagement,Classroom dynamics,Literature review,Kahoot!}
+    \endentry
+    \entry{biofeedbacklabsRegainEnergy}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1ba1cb5497fd5bbb9d5237eca65e8785}{%
+           family={{Biofeedback Labs}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{fullhash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{fullhashraw}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{bibnamehash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{authorbibnamehash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{authornamehash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{authorfullhash}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \strng{authorfullhashraw}{1ba1cb5497fd5bbb9d5237eca65e8785}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://biofeedbacklabs.com/biofeedback-game-system/}}
+      \field{note}{[Accessed 10-08-2025]}
+      \field{title}{{R}egain {E}nergy | {S}tone {B}iofeedback {S}ystem | {G}ames --- biofeedbacklabs.com}
+      \field{year}{2025}
+    \endentry
+    \entry{micropython}{misc}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://micropython.org/download/RPI_PICO2/}}
+      \field{note}{[Accessed 19-10-2025]}
+      \field{title}{{M}icro{P}ython - {P}ython for microcontrollers --- micropython.org}
+    \endentry
+    \entry{AD8232_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=9e35b5f4c8cbe2dda7c8b041ef261f70}{%
+           family={{SparkFun Electronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {SparkFun Electronics}%
+      }
+      \strng{namehash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{fullhash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{fullhashraw}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{bibnamehash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{authorbibnamehash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{authornamehash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{authorfullhash}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \strng{authorfullhashraw}{9e35b5f4c8cbe2dda7c8b041ef261f70}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-19}
+      \field{title}{AD8232 Heart Rate Monitor Hookup Guide}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://cdn.sparkfun.com/datasheets/Sensors/Biometric/AD8232_Heart_Rate_Monitor_v10.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.sparkfun.com/datasheets/Sensors/Biometric/AD8232_Heart_Rate_Monitor_v10.pdf
+      \endverb
+    \endentry
+    \entry{ecg-to-emg}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=6e510468b14dc8686adb3da9aeea4cef}{%
+           family={Mendes\bibnamedelima Junior},
+           familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={José\bibnamedelimb Jair\bibnamedelima Alves},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bb8b7d3155e76bc8c043436fcc7ae9ea}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima Prado},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d62c030fe371dba02440cc17d67c2544}{%
+           family={Biassio},
+           familyi={B\bibinitperiod},
+           given={Lorenzo\bibnamedelimb Coelho\bibnamedelimb de\bibnamedelimb Andrade\bibnamedelimb Villela\bibnamedelima De},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=58e85283ddfd908d64cb610d9d880431}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={Pedro\bibnamedelima Carlin},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f2cec7520df30f25e3bd925db0128a30}{%
+           family={Júnior},
+           familyi={J\bibinitperiod},
+           given={Paulo\bibnamedelima Broniera},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=0aba5b43c3a9d1cd76f2c51201f35f7b}{%
+           family={Lazzaretti},
+           familyi={L\bibinitperiod},
+           given={André\bibnamedelima Eugênio},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a654b8b5033ebbe2e9625ce6cc28f5d5}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Eddy},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd4bed2ff31087f38e1dc6494d09bca9}
+      \strng{fullhash}{cb708b08d1dfd83024692cf7e70da878}
+      \strng{fullhashraw}{cb708b08d1dfd83024692cf7e70da878}
+      \strng{bibnamehash}{dd4bed2ff31087f38e1dc6494d09bca9}
+      \strng{authorbibnamehash}{dd4bed2ff31087f38e1dc6494d09bca9}
+      \strng{authornamehash}{dd4bed2ff31087f38e1dc6494d09bca9}
+      \strng{authorfullhash}{cb708b08d1dfd83024692cf7e70da878}
+      \strng{authorfullhashraw}{cb708b08d1dfd83024692cf7e70da878}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Acquiring biopotentials with fidelity using low-cost circuits is a significant challenge in biomedical instrumentation. In this perspective, our goal is to investigate the characteristics of the widely applied AD8232®, an analog front-end for biopotential acquisition. We designed and evaluated circuits to acquire the most common biosignals: electrocardiogram (ECG), electromyogram (EMG), and electroencephalogram (EEG). Our findings show that the circuit is suitable for ECG and EMG instrumentation, although it has limitations for EEG signals, particularly concerning the gain. The entire project of the boards is also a contribution of this work as we intend to corroborate open-source do-it-yourself biomedical instrumentation.}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{number}{4}
+      \field{title}{AD8232 to Biopotentials Sensors: Open Source Project and Benchmark}
+      \field{volume}{12}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/electronics12040833
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/12/4/833
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/12/4/833
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{WinNT}
+  \missing{kicad}
+  \missing{masat-origo}
+\endrefsection
+\endinput
+

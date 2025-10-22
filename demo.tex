@@ -1,0 +1,345 @@
+\section{Bevezetés}
+\begin{quote}
+``If you can not measure it, you can not improve it.'' - Lord Kelvin
+\end{quote}
+\subsection{A biofeedback fogalma}
+\label{section:history}
+
+"A fogalom 1969-ből származik, 1940-ben kifejlesztett laboratóriumi módszerekre, amelyekben a kísérleti személyek megtanulták megváltoztatni a pulzusukat, vérnyomásukat és más fiziológiai funkcióikat, amelyekről eddig úgy gondolták, hogy tudatosan nem változtathatóak." \cite{BIOFEEDBACK-OVERVIEW} - saját, nem hivatalos fordítás
+
+A biofeedback abból a premisszából indul ki, hogy amit képesek vagyunk mérni azt irányítani is tudjuk, így van ez a fiziológiánkkal is, természetes határokon belül, képesek vagyunk arra, hogy a pulzusunkat figyelve növeljük vagy csökkentsük azt. 
+
+
+A biofeedbacket széles körben használják, változó sikerrel. Leginkább a krónikus izomfájdalom, szorongás, figyelemhiányos hiperaktivitás-zavar kezelésére (ADHD) használják. \cite{FRANK-CATEGORIES-OF-EFFICACY}
+
+Fontos megjegyezni, hogy létezik a biofeedbacknek egy alfaja is, amit neurofeedbacknek hívnak, ezt főleg elektroenkefalográfiával végzik (későbbiekben csak EEG), ezen eljárás abból áll, hogy elektródákat helyezünk a kísérleti személy fejbőrére és így képesek vagyunk mérni bizonyos területek aktivitását, fontos, hogy nem tudunk ezzel a módszerrel csak egy idegsejtet megfigyelni \cite{BRITTON-EEG-INTRO}, mert ahhoz túl távol vagyunk a sejttől, inkább több neuron szummázott aktivitását mérjük, melyek eljutnak a koponyán át az elektródáinkig.
+
+Az elektromiográf (későbbiekben csak EMG), amit mi fogunk használni, az már a perifériás idegrendszer motorikus aktivitását igyekszik mérni, az által hogy mekkora az elektromos feszültség bizonyos izomcsoportjainkban. \cite{EMG-DEF} Mindkét eljárást használták már ADHD biofeedback tréningre, pozitív eredményekkel, ugyanakkor az EEG hatásosabbnak bizonyult erre a feladatra mint az EMG. \cite{EMG-VS-EEG}
+
+
+\subsection{A feladat bemutatása}
+\label{section:overview}
+A célunk az, hogy egy olyan alkalmazást, pontosabban videójátékot fejleszzünk ami képes fejleszteni az azzal játszók koncentrációs képességeit. Ezt úgy igyekszünk elérni, hogy EMG-vel mérjük valós időben a játékos olyan fiziológiai markereit, amelyek korrelálnak a koncentrációval és a stresszel. \cite{EMG-STRESS,EMG-CONCENTRATION} A hipotézisem az, hogy a stressz csökkentése elsődlegesen légzéstechnikákkal \cite{BREATHING-VS-STRESS, PHYSIOLOGICAL-SIGH} javítani fogja az egyén koncentrációját \cite{STRESS-VS-CONCENTRATION}, a koncentrációt jutalmazó játékunkban. Az alábbiakban listázott markerek elsősorban a felhasználó stressz szintjét igyekeznek mutatni a számunkra, ez alól kivételt képez a nyak izomaktivitása, mivel az elsősorban az éberség mérésére használatos. Vannak ugyanakkor, olyan markerek is, amik egyszerre mutatják a stresszt és az éberséget ilyen a szívfrekvencia-variabilitás, ami alacsony értékek esetén jobb figyelmet és alacsonyabb stressz szintet mutat. Hasonló a tövis feletti izom izomaktivitása is, melyet már bizonyítottan használtak Figyelemhiányos hiperaktivitás-zavarral rendelkezők figyelmének a fejlesztésére. \cite{BARTH-ADHD-TRAPEZIUS}
+
+Amit mérni fogunk:
+\begin{itemize}
+    \item Szívfrekvencia-variabilitás \cite{HRV-STRESS, HRV-EXECUTIVE-FUNCTION}
+    \item Tövis feletti izom (Supraspinatus) izomaktivitása \cite{BARTH-ADHD-TRAPEZIUS}
+    \item Homlok izomaktivitása \cite{FRONTAL-BIOFEEDBACK}
+    \item Szájzáró-izmok izomaktivitása \cite{JAW-STRESS}
+\end{itemize}
+
+\subsection{A játékosság jelentősége} 
+
+
+
+Az elmúlt évtizedben jelentősen megnövekedett a játékosított tanulási módszerek iránti érdeklődés az oktatástechnológiában \cite{GAMIFICATION}, A Herman Ebbinghaus féle felejtési görbe  elméleti alapjain nyugvó köztes ismétlés (spaced repetition) módszer egyre szélesebb körben alkalmazott tanulási stratégiává vált. Működő digitális tanulási platformok számtalan módon igyekeznek bizonyos időközönként felidéztetni a tanulókkal az elsajátítani kívánt fogalmakat, egyre szórakoztatóbb módon növelve a tanulói motivációt \cite{GAMIFICATION} és hosszú távú emlékezést \cite{SPACED-REPETITION}, ennek köszönheti a népszerűségét a Kahoot is, mely hatékony tanulási eszköznek bizonyult \cite{KAHOOT}. 
+
+
+\subsection{Egy piacon lévő megoldás bemutatása \cite{biofeedbacklabsRegainEnergy}}
+
+következő alfejezetben ismertetett adatok és tartalmi elemek teljes egészében az alcímben megjelölt weboldalról származnak, ezért külön hivatkozás nem kerül feltüntetésre.
+
+"Kinek ajánlott?
+Pszichológusoknak, pszichiátereknek és trénereknek hogy segíthesség a klienseiket és bárkinek, aki szeretné jobban kezeleni a stresszt, a gondolatait és az érzelmeit otthoni gyakorlással. (Gyerekek is használhatják, 5 éves kor fölött.)" - saját, nem hivatalos fordítás
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=0.35\linewidth]{Images/stone1.png}
+    \caption{Az eszköz csak egy pulzumérőt használ, amit a fülünkre kell helyeznünk majd csatlakoztatnuk kell az eszközt a számítógéphez USB-n keresztül és már használhatjuk a letöltött szoftverünkkel.}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsubsection{Az alap szoftverben található játékok:}
+
+\textbf{Crystal Clear}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Images/crystal-clear.png}
+    \caption{"You control water. See how different droplets appear as you change the focus level of your brain. The clearer the mind, the larger the drops and the quicker the bowl gets filled. See how quickly can you complete this task using only the power of your mind?".}
+    \label{fig:crystal-clear}
+\end{figure}
+
+\textbf{Energy Booster}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Images/energy-booster.png}
+    \caption{"This game will teach you how to get rid of irritating thoughts, concentrate and focus on what's important now. In order to win, you must repress unnecessary thoughts and emotions (I will show you how). Focus on sensing the here and now. Unlock natural resources in your body to fight fatigue and find energy to do the things you love…"}
+    \label{fig:energy-booster}
+\end{figure}
+
+\textbf{Instant Relaxation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Images/instant-relaxation.png}
+    \caption{"This simple game will train your mind with a powerful technique which will provide instant relaxation. It works is by harmonizing your breathing with your heart rate (HRV). Clear instructions are attached. Even a child can do it! Let this machine work on your mind for one evening… I can guarantee that your friends will gossip about the "Mental Magic" abilities you will be able to show off the next morning."}
+    \label{fig:instant-relaxation}
+\end{figure}
+
+\textbf{Mental Magic - Mind Control}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Images/mental-magic.png}
+    \caption{"This game teaches you to control your emotions. In order to complete the task, you must silence your thoughts and emotions. The poorer your mental condition, the harder the game will be to play. The car will move slower and potholes will appear in the road. The better your focus and relaxation, the easier the road will become. The car will gain speed. Test yourself against family members and friends! See who will be the first to complete seven laps."}
+    \label{fig:mental-magic}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/stone-price.png}
+    \caption{A termék ára és a csomag tartalma}
+    \label{fig:stone-price}
+\end{figure}
+
+\subsection{Miben lesz más ez a projekt?}
+
+Mi 4 különböző biofeedback jelet fogunk alkalmazni, ez pontosabb mérést tesz majd lehetővé a számunkra. Mi kombinálni fogjuk a relaxációt a koncentrációval, annak reményében hogy javítsuk a játékos figyelmi képességeit. 
+
+
+
+% todo
+
+\subsection{Kezdő lépések}
+
+Mivel Pythonban szerettem volna a mikrokontrollert vezérelni, ezért a témavezetőmmel úgy döntüttünk, hogy Raspberry pico 2-t fogunk használni micropythonnal. Az ECG modul tökéletes lesz a számunkra, noha mint az később kiderült csak módosítasok után, a modullal járt 3 elektróda, amelyekkel az elektromos aktivitást tudjuk mérni. 
+
+
+A legelején még csak az ujjmozgató izmok aktivitását néztük, ehhez el kellett helyeznünk egy-egy elektródát az izom kezdő és végpontjában, majd egyet földelés gyanánt a kézfejre tettünk, de ezt bárhová máshová is helyezhettük volna, a mért izmon kívül természetesen. 
+
+A micropython firmware\cite{micropython} telepítését követően, a pico már képes volt python scripteket futtatni, egy egyszerű print utasítással eljutottunk oda, hogy serialba írjon, a chatGPT által írt adatvizualizációs program így már képes volt kimutatni, hogy mit mért az ECG modul.  
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Termék} & \textbf{Leírás} \\
+\hline
+\textbf{EKG-01-M} & AD8232 EKG szív monitor modul \\
+\hline
+\textbf{RPI-PICO-2W} & Raspberry Pi Pico 2 fejlesztői panel, RP2350, Cortex M33, RISC-V, CYW43439 wireless chip \\
+\hline
+\textbf{RC-40-10/MM} & Szalagkábel csatlakozóval, 10cm, 40p, male-male (jumper) \\
+\hline
+\textbf{HS-005} & Próbapanel, univerzális NYÁK, forrasztható, 420p, RM2.54mm, 83x54mm \\
+\hline
+\textbf{AK-300110-010-S} & USB A dugó - micro USB B micro dugó, 1m \\
+\hline
+\end{tabular}
+\caption{Megrendelt termékek listája}
+\end{table}
+
+
+\subsection{Technológiai akadályok}
+
+Már a legelején feltűnt számunkra, hogy nem a várt EMG jelet kapjuk az AD8232-től, ennek elsődleges oka az volt, hogy ez a hardware ECG-re van optimalizálva\cite{AD8232_datasheet}. Itt fontos megjegyezni, hogy az általunk használt ECG modul az valójában a hestore-on vásárolt legális másolata a sparkfun AD8232-nek, a Creative Commons share alike licenszének köszönhetően.\cite{AD8232_datasheet}
+
+így internetes keresést követően azt találtuk, hogy ez a hiba bizonyítottan javítható, bizonyos alkatrészek cseréjével\cite{ecg-to-emg}
+
+Ezek a következők voltak:
+
+\begin{itemize}
+    \item 200KOhm fémréteg ellenállás
+    \item 27KOhm fémréteg ellenállás
+    \item 1MOhm fémréteg ellenállás
+    \item 330KOhm fémréteg ellenállás
+    \item 100KOhm fémréteg ellenállás
+    \item 470nF kerámia kondenzátor
+    \item 1nF kerámia kondenzátor
+\end{itemize}
+
+
+A szükséges alkatrészek beszerzését és forrasztási munkálatokat én végeztem.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/ecg-to-emg.png}
+    \caption{A cikkben leírt megfelelő EMG konfigurációt követtük\cite{ecg-to-emg}}
+    \label{fig:good-config}
+\end{figure}
+
+
+
+
+
+
+
+
+\begin{figure}
+    \centering
+            \begin{lstlisting}[language=Python]
+         for i in range(3):
+         	print(i)
+        \end{lstlisting}
+    \caption{Tudunk az includegraphics helyére mást is tenni a figure env-ben, ekkor ugyanúgy kap számozást mint egy kép}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{cat}
+        \caption{Given associations in the Acquisition phase of the test. The two faces are linked by a common fish.}
+    \end{subfigure}
+    \hfill 
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{cat}
+	    \caption{The generalization task. One can measure the error (the missing of the linkage) statistically.}
+    \end{subfigure}
+    \caption{One possible example of the generalization or transfer establishment and challenge.}
+    \label{fig:gen_nemo}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\begin{tikzpicture}[scale=2.5]
+		    % Draw the circles
+		    \draw[thick] (0, 2) circle (0.6);
+		    \draw[thick, fill=gray] (0, 0) circle (0.6);
+
+		    % Draw the triangle with a horizontal base
+		    \draw[thick] (2.833, 0.5) -- (3.977, 0.5) -- (3.4, 1.5) -- cycle;
+
+		    % Arrows
+		    \draw[<->, ultra thick] (0.9, 2) -- (2.6, 1.2);
+		    \draw[<->, ultra thick] (0.9, 0) -- (2.6, 0.8);
+		    \draw[<->, ultra thick] (0.9, -0.25) -- (2.6, -1.05);
+
+		    %Rectangle
+		    \draw[thick] (2.833, -1.5) -- (3.977, -1.5) -- (3.977, -0.5) -- (2.833, -0.5) -- cycle;
+
+		    %Generaliation
+		    \draw[red, dashed, ultra thick, <->] (0.7, 2) -- (2.825, 1) -- (0.7, 0) -- (2.7122, -0.93);
+
+		\end{tikzpicture}
+	\caption{The association graph with the red association as the generalization task. The volunteer learns the three black associations and then implicitly forms an equivalence between the circles through the triangle. The volunteer can pair the circle and rectangle as an implicit associative skill. This example demonstrates stimuli from the Polygon test.}
+	\label{fig:gen_poly}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{cat}
+	\caption{The timing of the test~ \cite{WinNT}}
+\label{fig:test_flow}
+\end{figure}
+
+
+\begin{table}
+\centering
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+\begin{tabular}{c|c|c!{\VRule[2pt]}c|c}
+\multicolumn{3}{c}{Acquisition Phase}    & \multicolumn{2}{c}{Test Phase} \\
+Shaping             & Equivalence training & New consequents     & Retrieval                  & Generalization            \\ \hline &&&& \\
+A1 $\to$ X1 & A1 $\to$ X1  & A1 $\to$ X1 & A1 $\to$ X1        &                           \\
+                    & A2 $\to$ X1  & A2 $\to$ X1 & A2 $\to$ X1        &                           \\
+                    &                      & A1 $\to$ X2 & A1 $\to$ X2        &                           \\
+                    &                      &                     &                            & A2 $\to$ X2       \\
+B1 $\to$ Y1 & B1 $\to$ Y1  & B1 $\to$ Y1 & B1 $\to$ Y1        &                           \\
+                    & B2 $\to$ Y1  & B2 $\to$ Y1 & B2 $\to$ Y1        &                           \\
+                    &                      & B1 $\to$ Y2 & B1 $\to$ Y2        &                           \\
+                    &                      &                     &                            & B2 $\to$ Y2
+\end{tabular}
+\caption{A summary of the associative learning tests. A,B: tests)~ \cite{WinNT}.}
+\label{tab:associative_learning}
+\end{table}
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Growing number of the presented associations in tests},
+    xlabel={Trials},
+    ylabel={Number of continuously right answers},
+    xmin=6, xmax=17,
+    ymin=0, ymax=7,
+    xtick={6,7,8,9,10,11,12,13,14,15,16,17},
+    ytick={0,1,2,3,4,5,6,7},
+    legend pos=north west,
+    ymajorgrids=false,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=diamond*,
+    ]
+    coordinates {
+    (6,3)(7,4)(7,0)(8,1)(9,2)(10,0)(11,1)(12,2)(13,3)(14,4)(15,5)(16,6)(16,0)(17,1)
+    };
+
+\addplot [domain = 0:17,
+        ultra thick ,
+        dashed,
+        purple,
+        ]{4};
+
+\addplot [domain = 0:17,
+ultra thick,
+dashed,
+green,
+]{6};
+\end{axis}
+\end{tikzpicture}
+
+\caption{Grafikon, amit a latex razol ki.}
+\label{fig:phase_evol}
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Growing number of the presented associations in tests},
+    xlabel={vin},
+    ylabel={vout},
+    xmin=2.3,
+    xmax=2.5,
+    ymajorgrids=false,
+    grid style=dashed,
+]
+
+\addplot[red] 
+    table[
+        x=Set Voltage (V),
+        y=Measurement 1 (V),
+        col sep=comma
+    ] {adat1.csv}; 
+
+\end{axis}
+\end{tikzpicture}
+
+\caption{Grafikon CSV-ből, amit a LaTeX rajzol ki.}
+\label{fig:phase_evol}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Growing number of the presented associations in tests},
+    xlabel={vin},
+    ylabel={vout},
+    xmin=1.5,
+    xmax=2.5,
+    ymajorgrids=false,
+    grid style=dashed,
+    legend pos=north west,
+]
+
+\addplot[red] 
+    table[
+        x=Set Voltage (V),
+        y=Measurement 1 (V),
+        col sep=comma
+    ] {adat1.csv}; 
+\addlegendentry{Measurement}
+
+\end{axis}
+\end{tikzpicture}
+
+\caption{Grafikon CSV-ből, amit a LaTeX rajzol ki.}
+\label{fig:phase_evol}
+\end{figure}

@@ -1,0 +1,19 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[96] biber-MSWIN64:342> INFO - === 
+[134] Biber.pm:421> INFO - Reading 'main.bcf'
+[231] Biber.pm:1002> INFO - Found 25 citekeys in bib section 0
+[244] Biber.pm:4487> INFO - Processing section 0
+[255] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
+[341] bibtex.pm:1713> INFO - LaTeX decoding ...
+[384] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
+[523] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[524] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[524] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
+[539] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[555] bbl.pm:779> INFO - Output to main.bbl
+[555] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
+[555] Biber.pm:132> WARN - I didn't find a database entry for 'WinNT' (section 0)
+[555] Biber.pm:132> WARN - I didn't find a database entry for 'masat-origo' (section 0)
+[555] Biber.pm:132> WARN - I didn't find a database entry for 'kicad' (section 0)
+[555] Biber.pm:134> INFO - WARNINGS: 4
