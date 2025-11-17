@@ -157,12 +157,14 @@ A szükséges alkatrészek beszerzését és forrasztási munkálatokat én vég
 \end{figure}
 
 
-\subsection{Adatok továbbküldése a számítógépre}
+\subsection{Adatok továbbküldése a számítógépre \cite{usb-article-1,usb-article-2,usb-article-3}}
+Fontos megjegyeznem, hogy a következő fejezet, a fent említett források összefoglalásából és fordításából született.
+
 Mivel a célunk az, hogy a játékunk dinamikusan igazodjon a felhasználó fiziológiai állapotához, ezért szükségünk van folyamatos kommunikációra a számítógép és a modul között,
 erre a legalmasabbnak megoldásnak azt gondoltuk, hogy kontrollerként fogjuk emulálni a pico-t, így a folyamatos jelet képesek vagyunk analógként, vagy éppenséggel ravaszként beállítani, 
 a játékunk elsődlegesen kontrollre lesz tervezve. 
 
-\subsubsection{Universal Serial Bus (USB)\cite{usb-article-1,usb-article-2,usb-article-3}}
+\subsubsection{Universal Serial Bus (USB)}
 Az USB az egyik legelterjedtebb vezetékes kapcsolódási forma a számítógép és valamilyen eszköz között, 1994 előtt a számítógépek egyik nagy hiányossága volt, hogy számtalan különféle csatlakozási módot használtak, ilyen volt pl. a VGA, PS2 portok is, amiből több féle is volt.
 Ez problémás volt, hiszen ha az egér PS2-es portjába billentyűzetet csatlakoztatott véletlenül valaki figyelmetlenségből, akkor az operációs rendszer nem ismerte fel az eszközt.
 
@@ -175,7 +177,7 @@ Egy host két részből áll:
 
 \begin{itemize}
     \item Host controller: ez felel az új eszközök felismeréséért, kezeléséért
-    \item Root Hub: hardveres elem, ami belépési pontot biztosít, vagy root-ot az USB hierachiának a host rendszeren. 
+    \item Root Hub: hardveres elem, ami központi belépési pontja az USB eszközöknek
 \end{itemize}
 
 Minden csatlakoztatott eszköznek van egy címe, amivel a host eltudja érni. A host 127 kapcsolatot képes kezelni,  azért csak ennyit mert az UBS protokol 7 bites címekre van korlátozva.
@@ -222,7 +224,7 @@ Amennyiben megnézzük az USB protokolt az idő szempontjából, egy frame soroz
     \label{fig:usb-frame}
 \end{figure}
 
-Az ábra megmutatja, hogy egy tranzakció egy token csomagból, opcionális adatcsomagból és kézfogás csomagból áll. 
+Az ábra megmutatja, hogy egy tranzakció egy token csomagból, opcionális adatcsomagból és handshake csomagból áll. 
 
 Egy csomag tartalmazhat:
 \begin{itemize}
@@ -236,23 +238,129 @@ Egy csomag tartalmazhat:
 
 \paragraph{1. Token csomagok}
 
-A token csomagok, 
+
+A token csomagokat, mindig a host küldi és a forgalom irányításáért felelősek. A token csomag adja meg a tranzakció típusát.
+
+Ez a csomag így alakul:
+\begin{itemize}
+    \item Packet ID (PID)
+    \item 7-device address
+    \item 4-bit endpoint ID
+    \item 5-bit CRC
+\end{itemize}
+
+Három különböző változata van:
+
+\begin{itemize}
+    \item IN token packet - kérés az eszközről a hostnak
+    \item OUT token packet - megerősítés, a host eszközről, hogy készen áll a küldésre
+    \item SETUP token packet - konfigurációk és beállítások során kerül küldésre 
+\end{itemize}
+
+Van egy token csomag típus, amit érdemes külön is említeni, ez az úgynevezett Start of Frame (SOF) csomag, ez egy olyan speciális csomag, ami tartalmaz egy 11-bites frame number nevű mezőt, ami mutatja a jelenlegi és eddig elküldött csomagok számát. A frame number mindig inkrementálódik, amikor megjelenik egy új SOF az adatsinen.
+
+\paragraph{2. Adatcsomagok}
 
 
+Ezek a csomagok tartalmazzák, a továbbítandó adatnak egy részét.
+
+Fontos, hogy ezek kétféle ID-val rendelkezhetnek, ID0-val és ID1-el, Ennek hibavizsgálati okai vannak, mivel az adatcsomagok esetében, a küldők alternálják ezeket, így ha két azonos ID-vel ellátott csomagott kapunk egymás után, akkor biztosra vehetjük, hogy beszélhetünk adatveszteségről.
 
 
+\paragraph{3. Handshake csomagok}
 
-\subsubsection{HID fogalma}
-HID (Human Interface Device) alatt olyan eszközöket értünk melyek képessé teszi a felhasználót arra, hogy kommunikáljanak a számítógéppel, általában USB-n (Universal Serial Bus) keresztül, ez esetünkben sincs másképp.
+
+Ezeket a csomagokat a csomagokat a tranzakciók zárására használjuk.
+Mindig a tranzakciót fogadó fél küldik ki ezeket.
+
+Lehetnek:
+
+\begin{itemize}
+    \item ACK - sikeres továbbítás
+    \item NAK - sikertelen továbbítás
+    \item STALL - hibajelzés
+    \item NYET - A fogadó fél még nem áll készen a csomag fogadására (Csak High-Speed eszközök esetén) 
+\end{itemize}
+
+\paragraph{4. Különleges csomagok}
+
+
+\begin{itemize}
+    \item PRE - hubok számárá küldi ki a host, jelezve hogy a következő csomag low-speed lesz (Csak Full/High-Speed eszközök esetén)
+    \item PING - NYET csomag beérkezése után, ellenörzi az eszköz elérhetőségét (Csak High-Speed eszközök esetén)
+\end{itemize}
+
+\paragraph{Tranzakciók típusai}
+
+
+\begin{itemize}
+    \item Upstream/Read/IN - Olyan tranzakciók, melyeket az eszközről küldünk a hostnak. A tranzakciót a host kezdeményezi, hogy adatot kérhessen egy IN csomaggal rendelkező eszköztől. Amennyiben az eszköz nem képes adatot fogadni egy NAK-el fog válaszolni, majd később újra próbálja. Sikeres adatfogadás esetén egy handshakkel zárul.
+    \item Olyan tranzakciók, melyeket a hostról küldünk az eszköznek. A tranzakciót a host kezdeményezi, hogy adatot küldhessen egy OUT csomaggal rendelkező eszköznek. Amennyiben az eszköz nem képes adatot fogadni egy NAK-el fog válaszolni, majd később újra próbálja. Sikeres adatfogadás esetén egy handshakkel zárul.
+    \item Control - Segít beazonosítani, beállítani, irányítani az eszközöket és lehetővé teszi a host számára hogy adatokat olvasson ki az eszközről, beálíthassa az eszköz címét, 
+\end{itemize}
+
+\subsubsection{Descriptorok}
+
+Az USB Descriptorok személyigazolványként működnek az eszközök számára, hasonlóak a egy használati utasításhoz.
+
+\paragraph{Device Descriptor}
+
+
+Amikor csatlakoztatjuk az eszközt. az első kérése a hostnak a device descriptor. Ez biztosítja a host számára az összes szükséges információt, amire szüksége van, hogy megfelelően tudja kezelni az eszközt. 
+
+
+\paragraph{Configuration Descriptor}
+
+
+A configuration descriptor megadja hogy hogyan kommunikáljunk a host rendszerrel, például megadhatjuk az interfészek számát
+
+\paragraph{Interface Association Descriptor (IAD)}
+
+
+Az IAD célja, hogy több interfészt csoportosítva egy funkcionáló egységet alkosson belőlük. A kezdeti fázisban az USB specifikációk nem támogatták a multi-interface funkciókat, ezért született meg az IAD.
+
+\paragraph{Interface Descriptor}
+
+
+Az interface descriptor egy olyan adatszerkezet, ami végpontok gyűjteményének is nevezhető egy USB eszközön belül.
+
+\paragraph{Endpoint Descriptor}
+
+
+Ez a descriptor alapvető információt tartalmaz egy konkrét végpontról. Minden végpontnak saját adat csatornája van, lehet az IN vagy OUT. 
+
+\paragraph{String Descriptor}
+
+
+Ez a descriptor emberek számára is érthető módon írja le az USB eszköz tulajdonságait. Opcionális, de erősen ajánlott, több nyelv esetében, több string descriptorra van szükségünk.
+
+
+\subsubsection{USB Enumeration and Configuration}
+
+Három fázisra bontható:
+
+\begin{itemize}
+    \item Dynamic Detection - az USB sebességét ismeri fel a csatlakozást követően
+    \item Enumeration and configuration A host elkéri a device descriptort, ahonnan megtudja a maximális csomag mennyiséget, ezt követően a host újra indítja az eszközt és új címet ad neki, majd elkéri maradék descriptorokat is, ha ez is megvan, a host betölti a drivert.  
+    
+\end{itemize}Lehetnek:
+
+
+\subsubsection{USB osztályok}
+
+A szabványosított osztályok a következők:
+
+\begin{itemize}
+    \item HID (Human Interface Device) - képessé teszi a felhasználót arra, hogy kommunikáljanak a számítógéppel, mint például az egér, billentyűzet, kontroller.
+    \item USB Mass Storage - pl. külső HDD
+    \item USB Video - pl. kamerák
+    \item USB Printer
+    \item USB Communication Device Class (CDC)
+\end{itemize}
+
 \subsubsection{HID fogalma}
 A hardverünkön CircuitPython fut, ez 3 különböző HID eszközt tud emulálni, egeret, billenytyűzetet és úgy nevezett consumer controlt\cite{customising-devices,custom-hid}
 
-\subsubsection{A report descriptor fogalma}
-\begin{quote}
-    "To define an HID device, you need to supply an HID report descriptor. When you plug in an HID device, it sends its report descriptor(s) to the host computer. The report descriptor is binary data that specifies the device type and the details of the reports that the device sends and receives.
-
-    A report is binary data. A report sent from the device to the host computer is called an IN report. A report sent from the host to the device is an OUT report. IN and OUT are named from the perspective of the host."
-\end{quote}\cite{customising-devices,custom-hid}
 
 
 

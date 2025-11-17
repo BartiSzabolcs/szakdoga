@@ -1,19 +1,19 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[240] biber-MSWIN64:342> INFO - === 
-[331] Biber.pm:421> INFO - Reading 'main.bcf'
-[427] Biber.pm:1002> INFO - Found 30 citekeys in bib section 0
-[448] Biber.pm:4487> INFO - Processing section 0
-[467] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
-[539] bibtex.pm:1713> INFO - LaTeX decoding ...
-[594] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
-[773] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[773] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[773] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
-[841] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[858] bbl.pm:779> INFO - Output to main.bbl
-[858] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
-[858] Biber.pm:132> WARN - I didn't find a database entry for 'WinNT' (section 0)
-[858] Biber.pm:132> WARN - I didn't find a database entry for 'masat-origo' (section 0)
-[858] Biber.pm:132> WARN - I didn't find a database entry for 'kicad' (section 0)
-[859] Biber.pm:134> INFO - WARNINGS: 4
+[163] biber-MSWIN64:342> INFO - === 
+[216] Biber.pm:421> INFO - Reading 'main.bcf'
+[318] Biber.pm:1002> INFO - Found 30 citekeys in bib section 0
+[349] Biber.pm:4487> INFO - Processing section 0
+[358] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
+[462] bibtex.pm:1713> INFO - LaTeX decoding ...
+[514] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
+[657] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[657] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[657] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
+[676] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[694] bbl.pm:779> INFO - Output to main.bbl
+[694] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
+[694] Biber.pm:132> WARN - I didn't find a database entry for 'WinNT' (section 0)
+[694] Biber.pm:132> WARN - I didn't find a database entry for 'masat-origo' (section 0)
+[694] Biber.pm:132> WARN - I didn't find a database entry for 'kicad' (section 0)
+[694] Biber.pm:134> INFO - WARNINGS: 4
