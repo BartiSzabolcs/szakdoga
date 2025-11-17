@@ -1172,7 +1172,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-communication-protocol-part-2}}
       \field{note}{[Accessed 13-11-2025]}
-      \field{title}{{H}ow {U}{S}{B} {W}orks: {I}ntroduction ({P}art 1)}
+      \field{title}{{H}ow {U}{S}{B} {W}orks: {C}ommunication protocol ({P}art 2)}
     \endentry
     \entry{usb-article-3}{misc}{}{}
       \name{author}{1}{}{%
@@ -1197,7 +1197,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-enumeration-and-configuration-part-3}}
       \field{note}{[Accessed 13-11-2025]}
-      \field{title}{{H}ow {U}{S}{B} {W}orks: {I}ntroduction ({P}art 1)}
+      \field{title}{{H}ow {U}{S}{B} {W}orks: {E}numeration and configuration ({P}art 3)}
     \endentry
     \entry{customising-devices}{misc}{}{}
       \field{sortinit}{3}

@@ -175,7 +175,7 @@ Egy host két részből áll:
 
 \begin{itemize}
     \item Host controller: ez felel az új eszközök felismeréséért, kezeléséért
-    \item Root Hub: hardweres elem, ami belépési pontot biztosít, vagy root-ot az USB hierachiának a host rendszeren. 
+    \item Root Hub: hardveres elem, ami belépési pontot biztosít, vagy root-ot az USB hierachiának a host rendszeren. 
 \end{itemize}
 
 Minden csatlakoztatott eszköznek van egy címe, amivel a host eltudja érni. A host 127 kapcsolatot képes kezelni,  azért csak ennyit mert az UBS protokol 7 bites címekre van korlátozva.
@@ -205,7 +205,7 @@ A végpontok úgynevezett, pipeokkal vannak hozzákötve a bufferhez.
     \label{fig:usb-data-flow}
 \end{figure}
 
-Az USB végpontok egyirányúak és az adat csak olyan irányba áramolhat, amelyet a végpont megenged. leggyakrabban ciklikus reduncancia vizsgálatot használnak a hibák keresésére (Cyclic Redundancy Checks - CRC). Ez a módszer checksum számítás követően hozzáadja a csomaghoz ezt az értéket, majd a fogadó fél újra kiszámolja a checksumot, amennyiben a két checksum egyezik, sikeres volt az adatátvitel.
+Az USB végpontok egyirányúak és az adat csak olyan irányba áramolhat, amelyet a végpont megenged. leggyakrabban ciklikus redundancia vizsgálatot használnak a hibák keresésére (Cyclic Redundancy Checks - CRC). Ez a módszer checksum számítás követően hozzzáfűzi a csomaghoz ezt az értéket, majd a fogadó fél újra kiszámolja a checksumot, amennyiben a két checksum egyezik, sikeres volt az adatátvitel.
 
 A végpontokra azért van szükség, mert az eszközöknek eltérhet a mintavételezési rátája, ahogy az adatmennyiség is egy csomag esetén.
 
