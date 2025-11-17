@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1760885673.01532 "main.bcf" "main.bbl" "main" 1761127750.03188 0
-  "hivatkozasok.bib" 1760885650 19711 3759a722e4b786cbc96afab3e79d964f ""
-  "main.bcf" 1761127749 110039 aa5b934b82ff03adabe7413dcaf49cb8 "pdflatex"
+["biber main"] 1763062760.66222 "main.bcf" "main.bbl" "main" 1763376334.08781 0
+  "hivatkozasok.bib" 1763057579 21080 bb521cb031d73d789596992a3ffc74a1 ""
+  "main.bcf" 1763376333 110805 ae6d9c167ce69160ddc7569b56e0ce44 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761127738.91194 "c:/Users/Szabi/Desktop/szakdoga/main.tex" "main.pdf" "main" 1761127750.03304 0
+["pdflatex"] 1763376325.45635 "c:/Users/Szabi/Desktop/szakdoga/main.tex" "main.pdf" "main" 1763376334.08848 0
   "./Cimlap.tex" 1759037499 656 d22b32d6a8128d2807a568af4cef7b0f ""
   "Cimlap.tex" 1759037499 656 d22b32d6a8128d2807a568af4cef7b0f ""
   "Feladatkiiras.tex" 1759036732 309 bc917bd4dd16526c96fb07631c46e73d ""
@@ -19,6 +19,8 @@
   "Images/schematic1.pdf" 1759036732 283190 3443d6e65968af014e7b2823626c3d42 ""
   "Images/stone-price.png" 1759036732 177317 230628f956f329e6aecbd9cbfaaeebb7 ""
   "Images/stone1.png" 1759036732 400736 fae747b45ce51b7382b621c272c4eb26 ""
+  "Images/usb-figure-2-1.png" 1763057181 15582 23f22096130ee7b3a04ed415b48b887f ""
+  "Images/usb-figure-2-2.png" 1763060756 74449 253d77e1bb04e76e21facce67df14f9b ""
   "Projekt_demo.tex" 1759036732 3993 5272d4132377d3a5792b10169078f1ef ""
   "Tartalmi_osszfog.tex" 1759036732 620 e589728c43cb1b2af38eecd14b6e0b4c ""
   "adat1.csv" 1759036732 9995 d9f2e068c93f4f1b35b9a90a03646d2b ""
@@ -339,16 +341,16 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758453210 5574153 af86687748baf417d9e7d549313527be ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758453427 3621636 228905be17318a95ce6466d93cb640df ""
   "c:/texlive/2025/texmf.cnf" 1758453183 713 e69b156964470283e0530f5060668171 ""
-  "demo.tex" 1760885668 16541 34b2a5d7a9ebf586966d45dbe51f70f7 ""
+  "demo.tex" 1763062752 22454 f8255be6ccecc87ef873f2cb539e4f07 ""
   "fuggelek.tex" 1759036732 376 081eccc9bc106dd96d71aa7728cbbc07 ""
   "koszonet.tex" 1759036732 321 9960897572ee5e786f44f60f9c6c81a2 ""
   "licence.tex" 1759036732 609 35b346731c2d0f83f2c193e004ae36a5 ""
-  "main.aux" 1761127749 16321 caec8c0bb25d3b19f05aa8e270685e47 "pdflatex"
-  "main.bbl" 1760885674 55750 2f345a4b2547924739c04df96bc464fe "biber main"
-  "main.out" 1761127749 3156 0df7d5f2bc7886d6e961dd51f814fd75 "pdflatex"
-  "main.run.xml" 1761127749 2306 97ba4ccc2f6d7426075938ebe628d6ab "pdflatex"
+  "main.aux" 1763376333 19883 72513e3305265eadebc99a296aba3606 "pdflatex"
+  "main.bbl" 1763062762 60628 31aecd3b2d732d3056072c880919f1ec "biber main"
+  "main.out" 1763376333 4993 ae538e834d426374eadc7c8d8bfe7e97 "pdflatex"
+  "main.run.xml" 1763376333 2306 97ba4ccc2f6d7426075938ebe628d6ab "pdflatex"
   "main.tex" 1759037993 2880 73208880e755a63ab3983f3471458207 ""
-  "main.toc" 1761127749 1983 9101accf7cd6d305504746dde732ff63 "pdflatex"
+  "main.toc" 1763376333 3352 62f8208da6a975cccaeb0026116149cb "pdflatex"
   "nyilatkozat.tex" 1759038085 721 1916422a47055977ebf2913bd4b99a8e ""
   (generated)
   "main.aux"

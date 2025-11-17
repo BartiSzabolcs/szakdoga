@@ -157,9 +157,102 @@ A szükséges alkatrészek beszerzését és forrasztási munkálatokat én vég
 \end{figure}
 
 
+\subsection{Adatok továbbküldése a számítógépre}
+Mivel a célunk az, hogy a játékunk dinamikusan igazodjon a felhasználó fiziológiai állapotához, ezért szükségünk van folyamatos kommunikációra a számítógép és a modul között,
+erre a legalmasabbnak megoldásnak azt gondoltuk, hogy kontrollerként fogjuk emulálni a pico-t, így a folyamatos jelet képesek vagyunk analógként, vagy éppenséggel ravaszként beállítani, 
+a játékunk elsődlegesen kontrollre lesz tervezve. 
+
+\subsubsection{Universal Serial Bus (USB)\cite{usb-article-1,usb-article-2,usb-article-3}}
+Az USB az egyik legelterjedtebb vezetékes kapcsolódási forma a számítógép és valamilyen eszköz között, 1994 előtt a számítógépek egyik nagy hiányossága volt, hogy számtalan különféle csatlakozási módot használtak, ilyen volt pl. a VGA, PS2 portok is, amiből több féle is volt.
+Ez problémás volt, hiszen ha az egér PS2-es portjába billentyűzetet csatlakoztatott véletlenül valaki figyelmetlenségből, akkor az operációs rendszer nem ismerte fel az eszközt.
+
+1994-ben a Compaq, DEC, IBM, Intel, Microsoft, NEC, és Nortel közös erőfeszítésével megalkották a ma ismert USB architektúrát, amely képes volt svájci bicskaként működni az informatikában, ami a csatlakozókat illeti és nem mellesleg gyorsabb is volt mint az addigi megoldások.
+
+\subsubsection{USB architektúra}
+Az USB egy aszinkron protokol, ami a mester-szolga architektúrára épül, ugyanakkor csak egy host lehet egy rendszeren belül és minden kommunikáció az eszközökkel csak a host kezdeményezésére 
+
+Egy host két részből áll:
+
+\begin{itemize}
+    \item Host controller: ez felel az új eszközök felismeréséért, kezeléséért
+    \item Root Hub: hardweres elem, ami belépési pontot biztosít, vagy root-ot az USB hierachiának a host rendszeren. 
+\end{itemize}
+
+Minden csatlakoztatott eszköznek van egy címe, amivel a host eltudja érni. A host 127 kapcsolatot képes kezelni,  azért csak ennyit mert az UBS protokol 7 bites címekre van korlátozva.
+
+\subsubsection{USB sebessége}
+
+Az USB specifikáció megkülönböztet sebbesség kategóriákat:
+
+\begin{itemize}
+    \item Low-Speed devices (maximum 1.5Mb/s); ide tartoznak az egerek, billentyűzetek
+    \item Full-Speed devices:  (maximum 12Mb/s); USB támogatott mobil telefonok, audio eszközök
+    \item High-Speed devices:  (maximum 480Mb/s); pendriveok, külső tárolók
+    \item Super-Speed(+) devices:  (maximum 20-80Gb/s); 
+\end{itemize}
+
+\subsubsection{USB végpontok}
+
+Egy USB eszköz, végpontokat tartalmaz, egy végpont az eszköz önállóan hivatkozható részét jelöli, ami képes információ közvetítésre a host és az eszköz között. Fontos megjegyezni azt, hogy ezen címek egyedisége csak az eszközön belül áll fenn. 
+
+A végpontok úgynevezett, pipeokkal vannak hozzákötve a bufferhez.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/usb-figure-2-1.png}
+    \caption{USB data flow model\cite{usb-article-2}}
+    \label{fig:usb-data-flow}
+\end{figure}
+
+Az USB végpontok egyirányúak és az adat csak olyan irányba áramolhat, amelyet a végpont megenged. leggyakrabban ciklikus reduncancia vizsgálatot használnak a hibák keresésére (Cyclic Redundancy Checks - CRC). Ez a módszer checksum számítás követően hozzáadja a csomaghoz ezt az értéket, majd a fogadó fél újra kiszámolja a checksumot, amennyiben a két checksum egyezik, sikeres volt az adatátvitel.
+
+A végpontokra azért van szükség, mert az eszközöknek eltérhet a mintavételezési rátája, ahogy az adatmennyiség is egy csomag esetén.
+
+\subsubsection{kommunikáció}
+
+A kommunikáció az USB 2.0 esetében félig duplex, mivel továbbítás és fogadás egyszerre nem valósítható meg, a tranzakciókat a host indítja és a hubhoz kapcsolódó eszközök, csak válaszolni tudnak rá.
+
+Amennyiben megnézzük az USB protokolt az idő szempontjából, egy frame sorozatot tartalmaz. Egy frame rendelkezik egy start of frame (SOF) csomaggal és egy vagy több tranzakcióval. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/usb-figure-2-2.png}
+    \caption{USB frame\cite{usb-article-2}}
+    \label{fig:usb-frame}
+\end{figure}
+
+Az ábra megmutatja, hogy egy tranzakció egy token csomagból, opcionális adatcsomagból és kézfogás csomagból áll. 
+
+Egy csomag tartalmazhat:
+\begin{itemize}
+    \item Packet ID (PID) - azonosítás
+    \item Optional Endpoint Address - 4 bites cím
+    \item Optional Payload Data - továbbítandó adat egy kis része (0 - 1023 byte)
+    \item Optional CRC - hibavizsgálat
+\end{itemize}
+
+\subsubsection{Tranzakciók}
+
+\paragraph{1. Token csomagok}
+
+A token csomagok, 
 
 
 
+
+
+\subsubsection{HID fogalma}
+HID (Human Interface Device) alatt olyan eszközöket értünk melyek képessé teszi a felhasználót arra, hogy kommunikáljanak a számítógéppel, általában USB-n (Universal Serial Bus) keresztül, ez esetünkben sincs másképp.
+\subsubsection{HID fogalma}
+A hardverünkön CircuitPython fut, ez 3 különböző HID eszközt tud emulálni, egeret, billenytyűzetet és úgy nevezett consumer controlt\cite{customising-devices,custom-hid}
+
+\subsubsection{A report descriptor fogalma}
+\begin{quote}
+    "To define an HID device, you need to supply an HID report descriptor. When you plug in an HID device, it sends its report descriptor(s) to the host computer. The report descriptor is binary data that specifies the device type and the details of the reports that the device sends and receives.
+
+    A report is binary data. A report sent from the device to the host computer is called an IN report. A report sent from the host to the device is an OUT report. IN and OUT are named from the perspective of the host."
+\end{quote}\cite{customising-devices,custom-hid}
 
 
 

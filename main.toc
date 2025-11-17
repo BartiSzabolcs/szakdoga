@@ -8,10 +8,21 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {1.5}Miben lesz más ez a projekt?}{9}{subsection.1.5}%
 \select@language {magyar} \contentsline {subsection}{\numberline {1.6}Kezdő lépések}{9}{subsection.1.6}%
 \select@language {magyar} \contentsline {subsection}{\numberline {1.7}Technológiai akadályok}{10}{subsection.1.7}%
-\select@language {magyar} \contentsline {section}{\numberline {2}Mikroműholdak bemutatása}{16}{section.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.1}Modulok egy CubeSat műholdon}{16}{subsection.2.1}%
-\select@language {magyar} \contentsline {section}{\numberline {3}Fedélzeti számítógép}{16}{section.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {3.1}Fejlesztéshez szükséges eszközök}{16}{subsection.3.1}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.1}Nyomtatott áramkör fejlesztése}{17}{subsubsection.3.1.1}%
-\select@language {magyar} \contentsline {section}{\numberline {4}License}{19}{section.4}%
-\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{20}{section*.22}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.8}Adatok továbbküldése a számítógépre}{11}{subsection.1.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.1}Universal Serial Bus (USB)\blx@tocontentsinit {0}\cite {usb-article-1,usb-article-2,usb-article-3}}{11}{subsubsection.1.8.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.2}USB architektúra}{12}{subsubsection.1.8.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.3}USB sebessége}{12}{subsubsection.1.8.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.4}USB végpontok}{12}{subsubsection.1.8.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.5}kommunikáció}{13}{subsubsection.1.8.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.6}Tranzakciók}{14}{subsubsection.1.8.6}%
+\select@language {magyar} \contentsline {paragraph}{1. Token csomagok}{14}{section*.14}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.7}HID fogalma}{14}{subsubsection.1.8.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.8}HID fogalma}{14}{subsubsection.1.8.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.8.9}A report descriptor fogalma}{14}{subsubsection.1.8.9}%
+\select@language {magyar} \contentsline {section}{\numberline {2}Mikroműholdak bemutatása}{20}{section.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1}Modulok egy CubeSat műholdon}{20}{subsection.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3}Fedélzeti számítógép}{20}{section.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1}Fejlesztéshez szükséges eszközök}{20}{subsection.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.1}Nyomtatott áramkör fejlesztése}{21}{subsubsection.3.1.1}%
+\select@language {magyar} \contentsline {section}{\numberline {4}License}{23}{section.4}%
+\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{24}{section*.25}%

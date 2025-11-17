@@ -38,8 +38,8 @@
       \strng{authornamehash}{af193b6238cef5dcd2fbc0af5ee0c070}
       \strng{authorfullhash}{af193b6238cef5dcd2fbc0af5ee0c070}
       \strng{authorfullhashraw}{af193b6238cef5dcd2fbc0af5ee0c070}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Biofeedback involves the monitoring and use of physiologic information to teach patients to modify specific physiologic functions. Common modalities for biofeedback include surface electromyography, respiration rate and depth, skin surface temperature, cardiovascular reactivity, and electrodermal response. Clinical biofeedback therapy broadly involves either the direct feedback learning model or the therapeutic/stress-management/biofeedback model, which emphasizes the need to understand each patient as an individual. Biofeedback interventions have been deemed efficacious or probably efficacious in treating a number of medical disorders, and are increasingly embraced by the public as well as by health care providers and payors.}
@@ -100,8 +100,8 @@
       \strng{authornamehash}{47a91d108fc42a5bec66cc5934ce96fb}
       \strng{authorfullhash}{befcc0d7f195371a3269702d6548b1a0}
       \strng{authorfullhashraw}{befcc0d7f195371a3269702d6548b1a0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Biofeedback is a mind-body technique in which individuals learn how to modify their physiology for the purpose of improving physical, mental, emotional and spiritual health. Much like physical therapy, biofeedback training requires active participation on the part of patients and often regular practice between training sessions. Clinical biofeedback may be used to manage disease symptoms as well as to improve overall health and wellness through stress management training. Research has shown that biofeedback interventions are efficacious in treating a variety of medical conditions, and many Americans are turning to biofeedback and other less traditional therapies for their routine healthcare.Clinical biofeedback training is growing increasingly popular in the USA, as many people are seeking out relatively new approaches to healthcare. This article provides an overview of clinical biofeedback training, outlines two models of training, details research which has established how effective biofeedback is in patients with a given disease, and describes who should be referred for biofeedback training.}
@@ -164,8 +164,8 @@
       \strng{editornamehash}{7183ef9e5e3fabb5d5181ad7c888eb96}
       \strng{editorfullhash}{7183ef9e5e3fabb5d5181ad7c888eb96}
       \strng{editorfullhashraw}{7183ef9e5e3fabb5d5181ad7c888eb96}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Electroencephalography ({EEG}): An Introductory Text and Atlas of Normal and Abnormal Findings in Adults, Children, and Infants}
@@ -206,8 +206,8 @@
       \strng{authornamehash}{64a43d3d07a639d642c930f07ba9ad54}
       \strng{authorfullhash}{64a43d3d07a639d642c930f07ba9ad54}
       \strng{authorfullhashraw}{64a43d3d07a639d642c930f07ba9ad54}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Hand gesture recognition based on myoelectric (EMG) signals is an innovative approach for the development of intuitive interaction devices, ranging from poliarticulated prosthetic hands to intuitive robot and mobile interfaces. Their study and development in controlled environments provides promising results, but effective real-world adoption is still limited due to reliability problems, such as motion artifacts and arm posture, temporal variability and issues caused by the re-positioning of sensors at each use. In this work, we present an EMG dataset collected with the aim to explore postural and temporal variability in the recognition of arm gestures. Its collection of gestures executed in 4 arm postures over 8 days allows to evaluate the impact of such variability on classification performance. We implemented and tested State-of-the-Art (SoA) recognition approaches analyzing the impact of different training strategies. Moreover, we compared the computational and memory requirements of the considered algorithms, providing an additional evaluation criteria useful for real-time implementation. Results show a decrease in the recognition of inter-posture and inter-day gestures up to 20\%. The provided dataset will allow further exploration of such effects and the development of effective training and recognition strategies.}
@@ -263,8 +263,8 @@
       \strng{authornamehash}{cbd631f5cbbb140661d267da69812ff2}
       \strng{authorfullhash}{4d3052315531f15bd54cd9f19671a4fc}
       \strng{authorfullhashraw}{4d3052315531f15bd54cd9f19671a4fc}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1435-165X}
@@ -310,8 +310,8 @@
       \strng{authornamehash}{8d8d41ffbc854ef7691d38d1705aff84}
       \strng{authorfullhash}{8d8d41ffbc854ef7691d38d1705aff84}
       \strng{authorfullhashraw}{8d8d41ffbc854ef7691d38d1705aff84}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0169-2607}
@@ -356,8 +356,8 @@
       \strng{authornamehash}{6c663e2253815eabf0adb3c87d684863}
       \strng{authorfullhash}{6c663e2253815eabf0adb3c87d684863}
       \strng{authorfullhashraw}{6c663e2253815eabf0adb3c87d684863}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1532-0634}
@@ -412,8 +412,8 @@
       \strng{authornamehash}{ccac1a2daaf8d117138c95529f1f8034}
       \strng{authorfullhash}{4b5bdfa971baed399b018f4625a08ba1}
       \strng{authorfullhashraw}{4b5bdfa971baed399b018f4625a08ba1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -497,8 +497,8 @@
       \strng{authornamehash}{8c74e7a4e96b6ce6b99879433685bd86}
       \strng{authorfullhash}{101bec254dea0b9f8ec8506df504ebce}
       \strng{authorfullhashraw}{101bec254dea0b9f8ec8506df504ebce}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2666-3791}
@@ -572,8 +572,8 @@
       \strng{authornamehash}{0a62879f389927837e8746c5932e1a44}
       \strng{authorfullhash}{eceee33f2eeb90e4efac00e0aa2334be}
       \strng{authorfullhashraw}{eceee33f2eeb90e4efac00e0aa2334be}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -1009,8 +1009,8 @@
       \strng{authornamehash}{1ba1cb5497fd5bbb9d5237eca65e8785}
       \strng{authorfullhash}{1ba1cb5497fd5bbb9d5237eca65e8785}
       \strng{authorfullhashraw}{1ba1cb5497fd5bbb9d5237eca65e8785}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://biofeedbacklabs.com/biofeedback-game-system/}}
@@ -1122,6 +1122,109 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/2079-9292/12/4/833
+      \endverb
+    \endentry
+    \entry{usb-article-1}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=047a2b683e38d40afd11b93568d8a8a1}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Jesal},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{bibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorbibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authornamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-introduction-part-1}}
+      \field{note}{[Accessed 13-11-2025]}
+      \field{title}{{H}ow {U}{S}{B} {W}orks: {I}ntroduction ({P}art 1)}
+    \endentry
+    \entry{usb-article-2}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=047a2b683e38d40afd11b93568d8a8a1}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Jesal},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{bibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorbibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authornamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-communication-protocol-part-2}}
+      \field{note}{[Accessed 13-11-2025]}
+      \field{title}{{H}ow {U}{S}{B} {W}orks: {I}ntroduction ({P}art 1)}
+    \endentry
+    \entry{usb-article-3}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=047a2b683e38d40afd11b93568d8a8a1}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Jesal},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{fullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{bibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorbibnamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authornamehash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
+      \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-enumeration-and-configuration-part-3}}
+      \field{note}{[Accessed 13-11-2025]}
+      \field{title}{{H}ow {U}{S}{B} {W}orks: {I}ntroduction ({P}art 1)}
+    \endentry
+    \entry{customising-devices}{misc}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Learn.adafruit.com}
+      \field{note}{[Accessed 06-11-2025]}
+      \field{title}{Customizing USB Devices in CircuitPython --- learn.adafruit.com}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/customizing-usb-devices-in-circuitpython/hid-devices#standard-hid-devices-3096602-2
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/customizing-usb-devices-in-circuitpython/hid-devices#standard-hid-devices-3096602-2
+      \endverb
+    \endentry
+    \entry{custom-hid}{misc}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Learn.adafruit.com}
+      \field{note}{[Accessed 06-11-2025]}
+      \field{title}{Custom HID Devices in CircuitPython --- learn.adafruit.com}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/custom-hid-devices-in-circuitpython?view=all
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/custom-hid-devices-in-circuitpython?view=all
       \endverb
     \endentry
   \enddatalist
