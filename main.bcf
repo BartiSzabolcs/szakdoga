@@ -2409,12 +2409,13 @@
     <bcf:citekey order="31" intorder="1">usb-article-2</bcf:citekey>
     <bcf:citekey order="32" intorder="1">customising-devices</bcf:citekey>
     <bcf:citekey order="32" intorder="2">custom-hid</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">WinNT</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">customising-devices</bcf:citekey>
     <bcf:citekey order="34" intorder="1">WinNT</bcf:citekey>
     <bcf:citekey order="35" intorder="1">WinNT</bcf:citekey>
     <bcf:citekey order="36" intorder="1">WinNT</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">masat-origo</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">kicad</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">WinNT</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">masat-origo</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">kicad</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
