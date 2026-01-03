@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1763499698.19383 "main.bcf" "main.bbl" "main" 1763499738.93073 0
+["biber main"] 1763539129.50001 "main.bcf" "main.bbl" "main" 1767448987.79649 0
   "hivatkozasok.bib" 1763380924 21107 e6405ec6489f7c9e98e54edbb35be6e5 ""
-  "main.bcf" 1763499738 110367 0643c54939cd0bdf076d93cab77eda2a "pdflatex"
+  "main.bcf" 1767448987 109565 03a1335cb8b796eb54d142b43a0f4916 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763499735.59022 "c:/Users/Szabi/Desktop/szakdoga/main.tex" "main.pdf" "main" 1763499738.93142 0
+["pdflatex"] 1767448979.13139 "c:/Users/Szabi/Desktop/szakdoga/main.tex" "main.pdf" "main" 1767448987.79727 0
   "./Cimlap.tex" 1759037499 656 d22b32d6a8128d2807a568af4cef7b0f ""
   "Cimlap.tex" 1759037499 656 d22b32d6a8128d2807a568af4cef7b0f ""
   "Feladatkiiras.tex" 1759036732 309 bc917bd4dd16526c96fb07631c46e73d ""
@@ -335,16 +335,16 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758453210 5574153 af86687748baf417d9e7d549313527be ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758453427 3621636 228905be17318a95ce6466d93cb640df ""
   "c:/texlive/2025/texmf.cnf" 1758453183 713 e69b156964470283e0530f5060668171 ""
-  "demo.tex" 1763499632 23107 ecf8854f15852092ea425c72322789c8 ""
+  "demo.tex" 1763539100 22712 9d38f483588d193f9fb31bfcf463cc08 ""
   "fuggelek.tex" 1763499731 146 e86f9c94682677bf1e94bc07aacbe0ca ""
   "koszonet.tex" 1759036732 321 9960897572ee5e786f44f60f9c6c81a2 ""
   "licence.tex" 1759036732 609 35b346731c2d0f83f2c193e004ae36a5 ""
-  "main.aux" 1763499738 16858 fc6b3b65943bafa00d43533ab8bbdeba "pdflatex"
-  "main.bbl" 1763499700 60592 0c834840241645d434e78eb20897e1f2 "biber main"
-  "main.out" 1763499738 4156 0902dfc0622e63790c9531546bb2f726 "pdflatex"
-  "main.run.xml" 1763499738 2306 97ba4ccc2f6d7426075938ebe628d6ab "pdflatex"
+  "main.aux" 1767448987 15339 0e53f0d05d9d359257fed92230f73fc6 "pdflatex"
+  "main.bbl" 1763539152 34277 211ed43e8f99e4e54636b5c269ac1c87 "biber main"
+  "main.out" 1767448987 4290 7b41aac0d85edf4851b4f62e7962600f "pdflatex"
+  "main.run.xml" 1767448987 2306 97ba4ccc2f6d7426075938ebe628d6ab "pdflatex"
   "main.tex" 1759037993 2880 73208880e755a63ab3983f3471458207 ""
-  "main.toc" 1763499738 3810 e50c68a133611c720e886b8bc9058d2e "pdflatex"
+  "main.toc" 1767448987 3916 361cf75cc2b12c6466e9eba3e998792f "pdflatex"
   "nyilatkozat.tex" 1759038085 721 1916422a47055977ebf2913bd4b99a8e ""
   (generated)
   "main.aux"
