@@ -1,0 +1,17 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is '%OUTDIR%/main.blg'
+[92] biber-MSWIN64:342> INFO - === 
+[129] Biber.pm:421> INFO - Reading '%OUTDIR%/main.bcf'
+[224] Biber.pm:1002> INFO - Found 22 citekeys in bib section 0
+[236] Biber.pm:4487> INFO - Processing section 0
+[245] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
+[333] bibtex.pm:1713> INFO - LaTeX decoding ...
+[399] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
+[517] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[517] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[517] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
+[532] bbl.pm:676> INFO - Writing '%OUTDIR%/main.bbl' with encoding 'UTF-8'
+[544] bbl.pm:779> INFO - Output to %OUTDIR%/main.bbl
+[545] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
+[545] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\Szabi\AppData\Local\Temp\biber_tmp_fv9r\eaaf0593c0c7ecedf9c02ae8ef193713_25708.utf8, line 374, warning: 80 characters of junk seen at toplevel
+[545] Biber.pm:134> INFO - WARNINGS: 2

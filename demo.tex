@@ -20,7 +20,7 @@ Az elektromiográf (későbbiekben csak EMG), amit mi fogunk használni, az már
 \subsection{A feladat bemutatása}
 \label{section:overview}
 A célunk az, hogy egy olyan alkalmazást, pontosabban videójátékot fejlesszünk ami képes fejleszteni az azzal játszók koncentrációs képességeit. Ezt úgy igyekszünk elérni, hogy EMG-vel mérjük valós időben a játékos olyan fiziológiai markereit, amelyek korrelálnak a flow állapotával,  A hipotézisem az, hogy a pozitív visszacsatolás révén és a nehézségi szint fejlődés szempontjából optimális algoritmikus beállításával megfogja könnyíteni az egyén számára, hogy a flow állapotába kerüljön. A bevonódást jutalmazó játékunkban.
-A trifázisos izomaktivitásból fogunk következtetni a bevonódás mértékére EMG segítségével.
+A trifázisos izomaktivitásból fogunk következtetni a bevonódás mértékére EMG segítségével (lásd \ref{sec:trifazisos}. fejezet).
 
 
 \subsection{A flow fogalma}
@@ -31,7 +31,6 @@ A flow állapot jellemzői:
 \begin{itemize}
     \item elveszett időérzék
     \item optimális stressz szint, ami még facilitáló
-    \item 
 \end{itemize}
 
 A flow állapothoz szükség van egyértelmű célokra, egyértelmű és azonnali viszajelzésre, meglévő képességek és a feladat nehézsége közötti optimális egyensúlyra. 
@@ -47,7 +46,7 @@ TODO ennek az egyensúlynak a fogalma és hogyan fogjuk elérni
 Az elmúlt évtizedben jelentősen megnövekedett a játékosított tanulási módszerek iránti érdeklődés az oktatástechnológiában \cite{GAMIFICATION}, A Herman Ebbinghaus féle felejtési görbe  elméleti alapjain nyugvó köztes ismétlés (spaced repetition) módszer egyre szélesebb körben alkalmazott tanulási stratégiává vált. Működő digitális tanulási platformok számtalan módon igyekeznek bizonyos időközönként felidéztetni a tanulókkal az elsajátítani kívánt fogalmakat, egyre szórakoztatóbb módon növelve a tanulói motivációt \cite{GAMIFICATION} és hosszú távú emlékezést \cite{SPACED-REPETITION}, ennek köszönheti a népszerűségét a Kahoot is, mely hatékony tanulási eszköznek bizonyult \cite{KAHOOT}. 
 
 
-\subsection{Egy piacon lévő megoldás bemutatása \cite{biofeedbacklabsRegainEnergy}}
+\subsection{Egy piacon lévő megoldás bemutatása\texorpdfstring{ \cite{biofeedbacklabsRegainEnergy}}{}}
 
 következő alfejezetben ismertetett adatok és tartalmi elemek teljes egészében az alcímben megjelölt weboldalról származnak, ezért külön hivatkozás nem kerül feltüntetésre.
 
@@ -104,7 +103,7 @@ Pszichológusoknak, pszichiátereknek és trénereknek hogy segíthesség a klie
 
 \subsection{Miben lesz más ez a projekt?}
 
-Mi 4 különböző biofeedback jelet fogunk alkalmazni, ez pontosabb mérést tesz majd lehetővé a számunkra. Mi kombinálni fogjuk a relaxációt a koncentrációval, annak reményében hogy javítsuk a játékos figyelmi képességeit. 
+A fenti megoldással ellentétben, mi izomaktivitást fogunk mérni két elektromiográf segítségével, ballisztikus (hirtelen) mozgások mérésével, a trifázisos aktivitás mentén képesek lehetünk kiszámolni egy flow értéket \ref{sec:trifazisos}, melynek a maximalizálása lesz a cél a játékunkban és hosszútávon pedig az, hogy képes legyen fejleszteni a játékosok koncentrációs képességeit a mindennapokban is, ennek empirikus bizonyítása túlmutat a szakdolgozatom keretein, ugyanakkor közeljövőbeli célom ennek megvalósítása. 
 
 
 
@@ -118,7 +117,7 @@ Mivel Pythonban szerettem volna a mikrokontrollert vezérelni, ezért a témavez
 A legelején még csak az ujjmozgató izmok aktivitását néztük, ehhez el kellett helyeznünk egy-egy elektródát az izom kezdő és végpontjában, majd egyet földelés gyanánt a kézfejre tettünk, de ezt bárhová máshová is helyezhettük volna, a mért izmon kívül természetesen. 
 
 A micropython firmware\cite{micropython} telepítését követően, a pico már képes volt python scripteket futtatni, egy egyszerű print utasítással eljutottunk oda, hogy serialba írjon, a chatGPT által írt adatvizualizációs program így már képes volt kimutatni, hogy mit mért az ECG modul.  
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|p{10cm}|}
 \hline
@@ -168,7 +167,7 @@ A szükséges alkatrészek beszerzését és forrasztási munkálatokat én vég
 \end{figure}
 
 
-\subsection{Adatok továbbküldése a számítógépre \cite{usb-article-1,usb-article-2,usb-article-3}}
+\subsection{Adatok továbbküldése a számítógépre\texorpdfstring{ \cite{usb-article-1,usb-article-2,usb-article-3}}{}}
 Fontos megjegyeznem, hogy a következő fejezet, a fent említett források összefoglalásából és fordításából született.
 
 Mivel a célunk az, hogy a játékunk dinamikusan igazodjon a felhasználó fiziológiai állapotához, ezért szükségünk van folyamatos kommunikációra a számítógép és a modul között,
@@ -375,9 +374,10 @@ A hardverünkön CircuitPython fut, ez 3 különböző HID eszközt tud emuláln
 
 
 A pico emulált kontroller descriptora így néz ki. \cite{customising-devices}
-\begin{figure}
-    \centering
-            \begin{lstlisting}[language=Python]
+
+itt beszélek \aref{fig:desc}. ábráról
+
+\begin{lstlisting}[language=Python]
          GAMEPAD_REPORT_DESCRIPTOR = bytes((
     0x05, 0x01,  # Usage Page (Generic Desktop Ctrls)
     0x09, 0x05,  # Usage (Game Pad)
@@ -404,5 +404,468 @@ A pico emulált kontroller descriptora így néz ki. \cite{customising-devices}
     0xC0,        # End Collection
 ))
         \end{lstlisting}
-    \caption{Tudunk az includegraphics helyére mást is tenni a figure env-ben, ekkor ugyanúgy kap számozást mint egy kép}
+
+\section{A trifázisos izommozgás}
+\label{sec:trifazisos}
+
+Az alábbiakban be fogom mutatni a trifázisos izommaktivációs mintázatot, hogyan mérhető EMG-vel és hogyan segíthet flow-ba kerülni.
+
+
+\section{A ballisztikus mozgás}
+A ballisztikus mozgás, gyors előre programozott mozdulat, mely a visszajelzés előtt befejeződik.
+
+\section{A mozgás 3 fázisa}
+ \begin{enumerate}
+     \item Aktivitás az agonista(AG1) izomban, gyorsítja a végtagot.
+     \item Aktivitás az antagonista(ANT) izomban, a fékezésért felelős.
+     \item Aktivitás az agonista(AG2) izomban, a stabilizálásért felel.
+
+     Ezek a fázisok és erősségeik nem konstansok, vagyis hatással van rájuk a hangulatunk, az adott feladat \cite{triphasic-movement-is-influenced-by-situational-factors}. 
+ \end{enumerate}
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=\linewidth]{Images/bobby_trifazisos.png}}
+\caption{Trifázisos izommozgás példa.}
+\label{fig:trifazisos}
 \end{figure}
+
+\section{A gyakorlás hatása}
+
+Az elterjedt gondolat az, hogy az izommozgás precizitása a sebességgel fordítottan arányos,  ez valóban igaznak látszik, ugyanakkor ennek a negatív korrelációnak a csökkenését nevezhetjük fejlődésnek, pontosan ez történik a gyakorlás hatására. 
+
+Az amplitúdók ingadozása csökkent a gyakorlása hatására és a maximális sebességig való eljutás és megtartása konstans maradt.\\
+
+A teljesítmény javulása az agonista, antagonista izommozgások időbeli változásának köszönhető, mikor a maximális gyorsaság nem változott semmit sem.
+\cite{improvement-in-ballistic-movement}
+
+\section{A két elmélet}
+Az egyik elmélet azt mondta ki, hogy a mozgásban való ilyen módú fejlődés az annak köszönhető, hogy az agyunk egy erősebb jelet küld mint előtte AG1-ként. 
+
+A másik elmélet szerint rövidülnek az impulzusok ezáltál növelve a teljesítményt, végül ahogy ez a kutatás is bizonyította nyert ez a nézőpont\cite{improvement-in-ballistic-movement}.
+
+\section{A flow állapota}
+
+A flow fogalmát Csikszentmihályi Mihály vezette be először a köztudatba \cite{cziksentmihalyi1990flow}. A flow állapot egy optimális mentális állapot, amelyben az egyén teljesen elmerül a tevékenységében, és a cselekvés és a tudatosság egybeolvad.
+
+Úgy is mondhatjuk, hogy a flow alatt olyan optimális élményeket értünk, amelyek a legélvezetesebbek az emberi életben. 
+
+Kijelenthetjük azt is, hogy aki többször van flowban az boldogabb és elégedettebb is.
+
+\subsection{A flow állapot jellemzői}
+
+A flow állapot több kulcsfontosságú jellemzővel bír:
+
+\begin{itemize}
+    \item \textbf{Elveszett időérzék}: Az időérzékelés megváltozik, az idő gyorsabban vagy lassabban telni látszik.
+    \item \textbf{Teljes koncentráció}: Az egyén teljesen elmerül a tevékenységben, a külvilág háttérbe szorul.
+    \item \textbf{Optimális stressz szint}: A feladat nehézsége és a személy képességei egyensúlyban vannak, ami facilitáló hatású.
+    \item \textbf{Magas teljesítmény}: A flow állapotban az egyén csúcsteljesítményre képes.
+    \item \textbf{Belső motiváció}: A tevékenység önmagáért motiváló, külső jutalom nélkül is.
+    \item \textbf{Egyértelmű célok és azonnali visszajelzés}: A feladat világos célokat tartalmaz, és a visszajelzés azonnal érkezik.
+\end{itemize}
+
+\subsection{A flow és a trifázisos izommozgás kapcsolata}
+
+A flow állapot eléréséhez elengedhetetlen a hatékony motoros kontroll. A trifázisos izommozgási mintázat optimalizálása során \cite{improvement-in-ballistic-movement} hozzájárulhat a flow állapot elérésének megkönnyítéséhez, mivel:
+
+\begin{itemize}
+    \item A mozgások automatizálódnak, csökkentve a kognitív terhelést
+    \item A precíz izomkontroll lehetővé teszi a feladatra való teljes koncentrációt
+    \item Az optimalizált mozgásminták növelik az önbizalmat és a kontroll érzését
+    \item A hatékony motoros végrehajtás lehetővé teszi a magasabb szintű célokra való fókuszálást
+\end{itemize}
+
+\subsection{A flow mérése}
+A flow-t, általában kérdőívekkel mérik, introspekció alapján, ezzel az a gond, hogy az emberek eltérően értelmezhetik ugyanazt a kérdést, nyilatkozhatnak úgy is, hogy az nem feltétlenül fedi az objektív valóságot, hiszen az introspekció alapú kérdőívek pontossága, korrelál az egyén önismeretével, ami szintén nem egy objektív kvantifikálható érték.\cite{methodological-limitations-of-introspections-in-ageing-studies, The-Introspection-Illusion} Ezen okokból sok kritika éri a pszichológia tudományát, ugyanakkor egyre inkább haladunk az objektív mérések felé, ez itt sincs másképp. Az EMG más néven Elektromiográfia, az izmok neurális aktivációját hivatott mérni, mi 3 elektródával végezzük mindezt, de a trifázisos izommozgáshoz 5 darab fog kelleni, hiszen kell két elektróda az Agonista izom kezdő és végpontjaiba, majd kettő az Antagonista izom kezdő és végpontjaiba és végül a kontrol elektróda egy semleges helyre, ez nálunk a kézfej szokott lenni.
+
+Mostmár tudjuk azt, hogyan mérhető EMG-vel a trifázisos izommozgás, de hogy jön képbe a flow? A flow állapota korrelál a nagyobb ballisztikus mozgás precizitással.
+
+ A ballisztikus mozgások során megfigyelhető trifázisos mintázat (AG1, ANT, AG2) optimalizációja jelzi ezt a fejlett állapotot. A kutatások szerint a gyakorlott, precíz mozgásnál – amennyiben a maximális sebesség állandó – az izomaktivitás időzítése megváltozik: az AG2 (második agonista löket) időtartama lerövidül és a megjelenése korábbra tolódik,. Ez a temporális finomhangolás teszi lehetővé a pontosabb megállást és a mozgásvariabilitás csökkenését, amely a flow-élmény fiziológiai kísérőjelensége lehet.
+
+ \section{Kísérleti Módszertan és Jelfeldolgozás}
+
+A kutatás során célunk egy objektív mérőszámrendszer kialakítása, amely képes valós időben vagy utólagos elemzéssel kimutatni a trifázisos mintázat finomhangolását a ballisztikus ujjmozgások során.
+
+\subsection{Mérési elrendezés}
+A mérésekhez felületi EMG (sEMG) szenzorokat alkalmazunk. Mivel az ujjak finommotorikus mozgatásáért felelős izmok hasa az alkaron található, az elektródákat itt helyezzük el. A vizsgált mozgás egy gyors, ballisztikus ujjextenzió (ujj felemelése) és flexió (leütés), amely jellemző a gépelésre vagy hangszeres játékra.
+
+Az 5 elektróda elhelyezése a következő anatómiai pontokon történik:
+\begin{enumerate}
+    \item \textbf{Agonista (AG):} Biceps Brachi - a tenyér kiforgatásáért felelős izom
+    \item \textbf{Antagonista (ANT):} Pronator Teres - a tenyére befele forgatásáért felelős izom
+    \item \textbf{Referencia:} Semleges pont a csuklócsont felett (Processus styloideus ulnae), ahol nincs izomaktivitás.
+\end{enumerate}
+
+
+\section{Várt Eredmények és Hipotézisek}
+
+A szakirodalom és az elméleti háttér alapján a következő összefüggéseket feltételezzük a mért adatokban, amikor az alany eléri a flow állapotot:
+
+\begin{enumerate}
+    \item \textbf{ANT fázis precizitása:} Flow állapotban az antagonista izom (Flexor) fékező hatása (ANT burst) élesebben elkülönül, minimalizálva az ujj felesleges rezgését a billentyű/felület elérésekor.
+    \item \textbf{Kokontrakció csökkenése:} Kezdőknél vagy stressz alatt gyakori, hogy a feszítő és hajlító izmok egyszerre feszülnek (merev kéz). Flow állapotban ez az átfedés minimalizálódik, az izmok "átadják" egymásnak a munkát.
+    \item \textbf{AG2 redukció:} A gyakorlottság hatására a mozgás végén lévő korrekciós feszítés (AG2) amplitúdója csökken, jelezve a hatékonyabb neurális vezérlést.
+\end{enumerate}
+
+\section{Mérés a gyakorlatban}
+
+Amint megérkezett a második ECG modul és átalakítottuk EMG-vé, akkor bele is vágtunk a mérésbe, az ujjmozgató izmok trifázisos aktivitását szerettük volna mérni. Az alábbi eredmények oszcilloszkóp segítségével történtek, ahol két mérőfejet használtunk, ezek földelése a gnd-hez volt bekötve, míg a mérócsúcsök a két analóg kimenetre. A mérőeszköz használata lehetőve tett még a pico2-nél is egy pontosabb mérést. Az eredmények összefoglalója ezen a képen látható:
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=\linewidth]{Images/összevetés.png}}
+\caption{Az EMG mérés eredményeinek összefoglalója.}
+\label{fig:osszevetes}
+\end{figure}
+
+A kép baloldalán láthatóak a korrelációk az agonista és az antagonista izmok között, míg a többi képen a mért értékek egymásra illesztését láthatjuk. Ami tisztán látható, hogy a feszítő és szorító korrelációok eltérnek egymástól és ezeknek a vizulizációjában láthatjuk azt, hogy szinte ugyanolyan utat jár be mindkét jel. Ez gyanús volt számunkra, arra gyanakodtunk hogy túl nagy az interferencia hiszen a felvétel során mind az 5 elektródának közel kellett lennie egymáshoz az alkaron. Az is felmerült bennünk, hogy a ballisztikus mozgások hiánya okozhatja ezeket a furcsaságokat. 
+
+Ugyanebben a periódusban jöttünk rá, hogy a fékezés aktivitása problémás lehet olyan mozgások esetében ahol fenn áll egy ütközés, hiszen akkor megtörténhet mondjuk kontroller esetében hogy az analógot mindig ütközésig nyomja valaki, így egyáltalán nem vagy kevésbé kell fékeznie a felhasználónak az izommozgást. 
+
+Ezt követően beszélgettem egy orvosis barátommal \pageref{sec:koszonet}, aki új ötleteket adott. Egyrészt elmondta, hogy nincs olyan variáns, amikor csak az egyik izom aktív az agonista-antagonista párosban, hizen míg az egyik feszül, addig a másiknak nyúlnia kell és ez is mutathat valamekkora aktivitást. Megpróbáltunk új mozgásokat keresni, ahol a mozgásban részt vevő izompárok távolabb vannak egymástól, hogy csökkentsük az inferenciát és nem ütközik, így találtunk rá a tenyérforgató mozgásra, ahol a pronator teres és a biceps brachi a két domináns felületi EMG-vel is mérhető izom. Fontos tapasztalat volt ugyan, hogy a biceps csak akkor aktív ha a könyék be van hajlítva \textasciitilde90 fokban. 
+
+A mérés eredménye a következő, ahol már evidens a jel trifázisos természete, ez annak is köszönhető, hogy itt már ballisztikus mozgásokat is haználtunk. 
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=\linewidth]{Images/palm-rotation.jpg}}
+\caption{A tenyérforgató izmok trifázisos aktivitása.}
+\label{fig:palm}
+\end{figure}
+
+A játék irányítása egy DualShock~4\texttrademark  \cite{DUALSHOCK4} kontroller gyorsulásmérőjével fog történni, a kontroller kormányként lesz fogva egy kézbe és az elforgatása lesz a felelős, mind a játék irányításáért, mind a trifázisos ballisztikos mozgásokért. 
+
+\subsection{A micropython hiányosságai}
+
+Sajnos rá kellett jönnünk, hogy a MicroPython interpreter overheadje okán nem volt képes elegendő mintavételi sebességet biztosítani mindkét szenzorhoz egyidejűleg, így az alábbi python kódot le kellett cserélnünk egy rust code-ra, amelyet ágensekkel segítségével hoztunk létre.
+
+Azért választottuk rustot, mivel hardwerközeli nyelv, annyira hogy nem kell telepíteni a pico2-n semmit, mint a micropython esetében, csak átmásolni a bináris fájlt és már működik is. hardwerközeliségről lévén szó válaszhattunk volna más nyelvet is, mint mondjuk a C, C++, de mégis a rust mellett döntöttünk, mivel ez egy modernebb nyelv, ahol expliciten ki kell kapcsolnunk a biztonsági funkciókat, hogy olyan szabad memóriakezelésünk legyen mint a másik két említett nyelvben.
+Az alábbi program binárisban küldi ki az adatokat számítógépre, ahol egy python scripttel fog történni a feldolgozás, ezt követi majd a játékmotor. 
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=\linewidth]{Images/technológiák.png}}
+\caption{A tenyérforgató izmok trifázisos aktivitása.}
+\label{fig:osszevetes}
+\end{figure}
+
+
+
+
+\begin{lstlisting}[language=Python]
+import board
+import analogbufio
+import array
+import ulab.numpy as np
+import time
+import usb_hid
+import usb_cdc
+
+# A csatlakoztatott USB HID eszközök közül kikeressük a gamepad-et.
+# A gamepad Usage Page-e 0x01 (Generic Desktop), Usage-e 0x05 (Game Pad).
+gamepad = None
+for device in usb_hid.devices:
+    if device.usage_page == 0x01 and device.usage == 0x05:
+        gamepad = device
+        break
+
+# A HID report 7 bájtos: az első bájt a Report ID, a többi az adatmezők.
+# A 4-es Report ID a custom gamepad descriptornak felel meg.
+report = bytearray(7)
+report[0] = 4
+
+def send_integer(value):
+    """Egyetlen értéket küld el az X tengely csatornaként (-127..127)."""
+    report[3] = value & 0xFF
+    gamepad.send_report(report)
+
+
+# Egy-egy olvasási ciklus mintaszáma (100 minta / 1000 Hz = 100 ms ablak)
+length = 100
+buffer1 = array.array("H", [0x0000] * length)
+buffer2 = buffer1[:]
+
+# Mindkét ADC csatornát 1000 Hz-es mintavételi rátával inicializáljuk.
+# GP26 = 1. szenzor (agonista izom), GP27 = 2. szenzor (antagonista izom)
+rate = 1000
+adcbuf1 = analogbufio.BufferedIn(board.GP26, sample_rate=rate)
+adcbuf2 = analogbufio.BufferedIn(board.GP27, sample_rate=rate)
+
+# A két csatorna nyers adatait tároljuk el utófeldolgozáshoz és kalibrációhoz.
+data = []
+calibration_data = []
+start_time = None
+minimal_activation_value = None
+
+# Az interleaved küldési buffer: a két csatorna mintái felváltva kerülnek bele
+# (combined[0], combined[2], ... = buffer1; combined[1], combined[3], ... = buffer2)
+combined = np.zeros(len(buffer1) * 2, dtype=np.uint16)
+
+
+try:
+    while True:
+        # Mindkét csatorna adatainak beolvasása a bufferekbe
+        adcbuf1.readinto(buffer1)
+        adcbuf2.readinto(buffer2)
+
+        # Az adatokat interleaved formátumban fűzzük össze, majd elküldjük
+        # a CDC adatcsatornán a PC-n futó vizualizációs programnak
+        combined[0::2] = buffer1
+        combined[1::2] = buffer2
+        usb_cdc.data.write(combined.tobytes())
+
+        # Az EMG aktivitás mértékét a szórással (std) becsüljük: nagyobb szórás
+        # = erősebb izomaktivitás. Az arányuk adja a flow-értéket.
+        value1 = np.std(np.array(buffer1))
+        value2 = np.std(np.array(buffer2))
+        if value2 != 0:
+            value = value1 / value2
+        else:
+            value = 1.0
+        data.append(value)
+
+        # Az első iterációban rögzítjük a kezdőidőpontot
+        if start_time is None:
+            start_time = time.time()
+        elapsed_time = round(time.time() - start_time)
+
+        # Az első 3 másodperc a kalibrációs fázis: ekkor a felhasználó
+        # relaxált állapotban van, az ekkor mért értékek adják az alapvonalat.
+        if elapsed_time == 3:
+            calibration_data = data[:]
+            minimal_activation_value = min(calibration_data)
+
+        # Kalibráció után összehasonlítjuk a jelenlegi értéket az alapvonallal
+        # és ennek megfelelő HID jelet küldünk a játéknak.
+        if elapsed_time > 3:
+            if value >= minimal_activation_value:
+                print(value)
+                send_integer(120)
+            else:
+                print(value)
+                send_integer(160)
+
+        # A csúszóablak méretét 200 mintában korlátozzuk a memória kímélése érdekében
+        if len(data) > 200:
+            data.pop(0)
+
+
+except Exception as e:
+    print("CRASHED:", e)
+
+finally:
+    # Az ADC erőforrásokat mindig fel kell szabadítani leálláskor
+    adcbuf1.deinit()
+    adcbuf2.deinit()
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Rust]
+#![no_std]
+#![no_main]
+
+use panic_halt as _;
+use rp235x_hal as hal;
+use cortex_m::singleton;
+use hal::pac;
+use hal::dma::{single_buffer, DMAExt};
+use usb_device::{class_prelude::*, prelude::*};
+use usbd_serial::SerialPort;
+
+#[link_section = ".start_block"]
+#[used]
+pub static IMAGE_DEF: hal::block::ImageDef = hal::block::ImageDef::secure_exe();
+// RP2350 külső kristályoszcillátor frekvenciája
+const XTAL_FREQ_HZ: u32 = 12_000_000u32;
+
+#[rp235x_hal::entry]
+fn main() -> ! {
+    let mut pac = pac::Peripherals::take().unwrap();
+    let _core = cortex_m::Peripherals::take().unwrap();
+    let mut watchdog = hal::Watchdog::new(pac.WATCHDOG);
+    let clocks = hal::clocks::init_clocks_and_plls(
+        XTAL_FREQ_HZ,
+        pac.XOSC,
+        pac.CLOCKS,
+        pac.PLL_SYS,
+        pac.PLL_USB,
+        &mut pac.RESETS,
+        &mut watchdog,
+    )
+    .unwrap();
+
+    // SIO (Single-cycle I/O) blokk inicializálása -- szükséges a GPIO lábakhoz
+    let sio = hal::Sio::new(pac.SIO);
+    let usb_bus = UsbBusAllocator::new(hal::usb::UsbBus::new(
+        pac.USB,
+        pac.USB_DPRAM,
+        clocks.usb_clock,
+        true,
+        &mut pac.RESETS,
+    ));
+    let mut serial = SerialPort::new(&usb_bus);
+     let mut usb_dev = UsbDeviceBuilder::new(&usb_bus, UsbVidPid(0x16c0, 0x27dd))
+        .strings(&[StringDescriptors::default()
+            .manufacturer("HA8KDA")
+            .product("Serial port")
+            .serial_number("TEST")])
+        .unwrap()
+        .max_packet_size_0(64)
+        .unwrap()
+        .device_class(2)
+        .build();
+
+        // GPIO lábak inicializálása az IO_BANK0 perifériához
+        let pins = hal::gpio::Pins::new(
+            pac.IO_BANK0,
+            pac.PADS_BANK0,
+            sio.gpio_bank0,
+            &mut pac.RESETS,
+        );
+        // DMA vezérlő inicializálása; a csatornák (ch0, ch1, ...) a split után érhetők el
+        let dma = pac.DMA.split(&mut pac.RESETS);
+        // ADC inicializálása; GP26 = 1. EMG csatorna, GP27 = 2. EMG csatorna
+        let mut adc = hal::Adc::new(pac.ADC, &mut pac.RESETS);
+        let mut adc_pin_0 = hal::adc::AdcPin::new(pins.gpio26.into_floating_input()).unwrap();
+        let adc_pin_1 = hal::adc::AdcPin::new(pins.gpio27.into_floating_input()).unwrap();
+
+
+    // Statikus DMA puffer: 1000 minta * 2 csatorna (round-robin), azaz 500 minta/csatorna
+    let buf_for_samples = singleton!(: [u16; 1000] = [0; 1000]).unwrap();
+
+        // ADC FIFO konfigurálása: 48 MHz / 48000 = 1000 Hz összesített mintavételi ráta,
+        // round-robin 2 csatornán -> 500 Hz / csatorna; DMA-ra kapcsolva
+        let mut adc_fifo = adc
+        .build_fifo()
+        .clock_divider(47999, 0)
+        .set_channel(&mut adc_pin_0)
+        .round_robin((&adc_pin_0, &adc_pin_1))
+        .enable_dma()
+        .start_paused();
+
+        let mut dma_transfer = Some(
+            single_buffer::Config::new(dma.ch0, adc_fifo.dma_read_target(), buf_for_samples).start()
+        );
+        adc_fifo.resume();
+        let mut is_streaming = false;
+
+        loop {
+            // USB parancsok fogadása a PC-ről: 'W'/'w' = adatfolyam indítása, 'X'/'x' = leállítása
+            if usb_dev.poll(&mut [&mut serial]) {
+                let mut rx_buf = [0u8; 8];
+                if let Ok(count) = serial.read(&mut rx_buf) {
+                    for i in 0..count {
+                        match rx_buf[i] as char {
+                            'W' | 'w' => is_streaming = true,
+                            'X' | 'x' => is_streaming = false,
+                            _ => {}
+                        }
+                    }
+                }
+            }
+
+            // Ha a DMA átvitel befejezte a puffer feltöltését, feldolgozzuk az adatokat
+            if dma_transfer.as_ref().map_or(false, |t| t.is_done()) {
+                let transfer = dma_transfer.take().unwrap();
+                // A wait() lezárja az átvitelt és visszaadja a DMA csatornát,
+                // az ADC olvasási célpontot és a mintapuffert újrafelhasználáshoz
+                let (ch, adc_read_target, buf) = transfer.wait();
+
+                if is_streaming {
+                    // A u16 mintákat nyers bájtokként küldjük el (little-endian, 2 bájt/minta)
+                    let raw_ptr = buf.as_ptr() as *const u8;
+                    let byte_len = buf.len() * 2;
+                    let bytes = unsafe { core::slice::from_raw_parts(raw_ptr, byte_len) };
+
+                    let mut written = 0;
+                    while written < bytes.len() {
+                        if let Ok(n) = serial.write(&bytes[written..]) {
+                            written += n;
+                        } else {
+                            break;
+                        }
+                    }
+                }
+
+                /* Új DMA átvitel indítása ugyanazokkal az erőforrásokkal -- körkörösen fut */
+                dma_transfer = Some(
+                    single_buffer::Config::new(ch, adc_read_target, buf).start()
+                );
+            }
+
+
+
+
+        }
+}
+
+
+
+/// Program metadata for `picotool info`
+#[link_section = ".bi_entries"]
+#[used]
+pub static PICOTOOL_ENTRIES: [hal::binary_info::EntryAddr; 5] = [
+    hal::binary_info::rp_cargo_bin_name!(),
+    hal::binary_info::rp_cargo_version!(),
+    hal::binary_info::rp_program_description!(c"USB Serial Example"),
+    hal::binary_info::rp_cargo_homepage_url!(),
+    hal::binary_info::rp_program_build_attribute!(),
+];
+
+
+
+
+\end{lstlisting}
+
+\subsection{A Flow score}
+
+A külső témavezetőmmel való konzultáció során arra jutottunk, hogy az alábbi értékek fognak kelleni a flow score kiszámításához:
+
+\begin{itemize}
+    \item Agonista és Antagonista amplitúdójának az aránya
+    \item Agonista és antagonista izmok koaktivációja.
+\end{itemize}
+
+\subsubsection{Agonista és Antagonista amplitúdójának az aránya}
+
+Az amplitúdó-arány (magnitude ratio) – amely az agonista és antagonista EMG-jelek integrált területének (AUC) hányadosaként definiálható – a motoros rendszer hatékonyságának egyik kulcsmutatója. Ha az agonista dominánsan, de arányosan nagyobb amplitúdóval aktiválódik az antagonistához képest, az arra utal, hogy a központi idegrendszer pontosan kalibrálta az erőkifejtést: elegendő impulzust ad a mozgás indításához, miközben az antagonista fékezés mértéke éppen annyi, amennyi a végpont pontos eléréséhez szükséges. \cite{amplitude1} Ezzel szemben, ha az antagonista amplitúdója aránytalanul magas az agonistához képest, az kompenzációra utalhat, ami rontja a mozgás folyamatosságát\cite{amplitude2}
+
+
+\subsubsection{Agonista és antagonista izmok koaktivációja}
+
+A flow állapot egyik biomechanikai predikátora a motoros hatékonyság, ezt a szakirodalom az agonista és antagonis izmok egyidejű feszülésének csökkenésével írja le. A gyakorlott, célorientált cselekvések során a központi idegrendszer olyan pontosan kalibrálja a mozdulatot indító erőkifejtést, hogy kevesebb korrekcióra és mérsékeltebb antagonista "fékezésre" van szükség a végtag pontos megállításához.\cite{coactivation2,coactivation3,coactivation5, coactivation4}
+
+
+
+
+
+
+
+
+
+
+\section{A játék}
+
+\subsection{Követelmények}
+
+Cél: Általános koncentrációs képességek javítása
+
+\begin{itemize}
+    \item legyünk képesek beolvasni a flow score-t
+    \item a flow score-hoz igazodjon a játék sebessége
+    \item a flow score-hoz igazodjon az akadályok mennyisége
+    \item legyen 10 előre megadott nehézségi szintű pálya, amelyek helye teljesítési útvonalának abszolút hossza azonos
+    \item figyelje hányszor hibázik a játékos és csökkentse a nehézséget (sebesség + akadályok mennyisége)
+    \item hibátlan teljesítmény esetén növekedjen a nehézség, a (plafon - 1)-igaznak
+    \item go és no go ingerek váltogatása
+    \item 
+    \item 
+\end{itemize}
+
+\subsection{Valós idejű jelfeldolgozás és hálózati zajszűrés}
+
+Az sEMG mérések során a környezeti elektromos hálózatból származó 50\,Hz-es zaj \textit{(power-line interference)} jelentősen torzíthatja a jelszinteket. Mivel a Flow Score számításban kulcsszerepet játszik az agonista és antagonista jelek görbe alatti területe (AUC) és azok metszete, a zajból adódó állandó oszcilláció a szoftverben hamis -- a valóságnál nagyobb -- területi értékeket, ezáltal hibás koaktivációs indexet (CAI) eredményezne.
+
+Ennek elkerülésére a Python alapú feldolgozó komponensben (\texttt{szabi.py}) a beérkező és csúszóablakban (sliding window) tárolt nyers adatsorokon egy digitális IIR lyukszűrőt (Notch filter) alkalmazunk $50\,$Hz-es középfrekvenciával és $Q=30$ jósági tényezővel. A megvalósítás során a \texttt{scipy.signal} könyvtár \texttt{iirnotch} és \texttt{filtfilt} metódusait hívjuk meg. Kiemelendő a \texttt{filtfilt} használata, amely a szűrést előrefelé és hátrafelé is elvégzi az adatsoron: ez az úgynevezett nulla fázistolású (zero-phase) szűrés garantálja, hogy a zajcsökkentés nem okoz időbeli késleltetést vagy fáziseltolódást a két izomcsatorna jelei között, így a koaktiváció (egymásra feszítés) időbeli egybeesése mérnökileg pontos marad. A szűrt adatok ezután kerülnek át a \texttt{calc\_magnitude\_ratio} és \texttt{calc\_reciprocal\_efficiency} algoritmusokba.
+
+\subsection{A játékmotor}
+
+A godot játékmotorra esett végül a választásunk \cite{godot_engine}, ennek elsődleges oka a unity-vel szemben a godot sokkal kezdőbarátabb és nem csak C\#-ban lehet benne szkripteket írni hanem a pythonos godot scriptben is. A godot barátságosságát érzékelteti az is, hogy egy darab portable exe futtatása elengedő hozzá, nincs hosszú telepítési idő, több gigabájtos telepítés, de mégis rendelkezik minden szükséges fejlesztési eszközzel, amire szükségünk lehetett. 

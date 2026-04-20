@@ -2406,14 +2406,6 @@
     <bcf:citekey order="30" intorder="1">improvement-in-ballistic-movement</bcf:citekey>
     <bcf:citekey order="31" intorder="1">methodological-limitations-of-introspections-in-ageing-studies</bcf:citekey>
     <bcf:citekey order="31" intorder="2">The-Introspection-Illusion</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">DUALSHOCK4</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">amplitude1</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">amplitude2</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">coactivation2</bcf:citekey>
-    <bcf:citekey order="35" intorder="2">coactivation3</bcf:citekey>
-    <bcf:citekey order="35" intorder="3">coactivation5</bcf:citekey>
-    <bcf:citekey order="35" intorder="4">coactivation4</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">godot_engine</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

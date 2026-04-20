@@ -31,26 +31,17 @@
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.8}USB Enumeration and Configuration}{17}{subsubsection.1.9.8}%
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.9}USB osztályok}{18}{subsubsection.1.9.9}%
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.10}HID fogalma}{18}{subsubsection.1.9.10}%
-\select@language {magyar} \contentsline {section}{\numberline {2}A trifázisos izommozgás}{19}{section.2}%
-\select@language {magyar} \contentsline {section}{\numberline {3}A ballisztikus mozgás}{19}{section.3}%
-\select@language {magyar} \contentsline {section}{\numberline {4}A mozgás 3 fázisa}{19}{section.4}%
+\select@language {magyar} \contentsline {section}{\numberline {2}A trifázisos izommozgás }{18}{section.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3}A ballisztikus mozgás}{18}{section.3}%
+\select@language {magyar} \contentsline {section}{\numberline {4}A mozgás 3 fázisa}{18}{section.4}%
 \select@language {magyar} \contentsline {section}{\numberline {5}A gyakorlás hatása}{20}{section.5}%
 \select@language {magyar} \contentsline {section}{\numberline {6}A két elmélet}{20}{section.6}%
-\select@language {magyar} \contentsline {section}{\numberline {7}A flow állapota}{21}{section.7}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.1}A flow állapot jellemzői}{21}{subsection.7.1}%
+\select@language {magyar} \contentsline {section}{\numberline {7}A flow állapota}{20}{section.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.1}A flow állapot jellemzői}{20}{subsection.7.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {7.2}A flow és a trifázisos izommozgás kapcsolata}{21}{subsection.7.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.3}A flow mérése}{22}{subsection.7.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.3}A flow mérése}{21}{subsection.7.3}%
 \select@language {magyar} \contentsline {section}{\numberline {8}Kísérleti Módszertan és Jelfeldolgozás}{22}{section.8}%
 \select@language {magyar} \contentsline {subsection}{\numberline {8.1}Mérési elrendezés}{22}{subsection.8.1}%
-\select@language {magyar} \contentsline {section}{\numberline {9}Várt Eredmények és Hipotézisek}{23}{section.9}%
-\select@language {magyar} \contentsline {section}{\numberline {10}Mérés a gyakorlatban}{23}{section.10}%
-\select@language {magyar} \contentsline {subsection}{\numberline {10.1}A micropython hiányosságai}{25}{subsection.10.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {10.2}A Flow score}{31}{subsection.10.2}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {10.2.1}Agonista és Antagonista amplitúdójának az aránya}{31}{subsubsection.10.2.1}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {10.2.2}Agonista és antagonista izmok koaktivációja}{31}{subsubsection.10.2.2}%
-\select@language {magyar} \contentsline {section}{\numberline {11}A játék}{32}{section.11}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.1}Követelmények}{32}{subsection.11.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.2}Valós idejű jelfeldolgozás és hálózati zajszűrés}{32}{subsection.11.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.3}A játékmotor}{33}{subsection.11.3}%
-\select@language {magyar} \contentsline {section}{\numberline {12}License}{36}{section.12}%
-\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{37}{section*.31}%
+\select@language {magyar} \contentsline {section}{\numberline {9}Várt Eredmények és Hipotézisek}{22}{section.9}%
+\select@language {magyar} \contentsline {section}{\numberline {10}License}{24}{section.10}%
+\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{25}{section*.27}%

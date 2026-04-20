@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.21)  20 APR 2026 21:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.21)  25 FEB 2026 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -54,10 +54,6 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks20
 ) (c:/texlive/2025/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
-) (c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
 ) (c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count287
@@ -103,8 +99,8 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
 \XKV@depth=\count292
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -115,7 +111,7 @@ Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count293
 )) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
+\@emptytoks=\toks23
 \ex@=\dimen158
 )
 \c@padzeroesN=\count294
@@ -151,8 +147,8 @@ LaTeX Info: Redefining \today on input line 736.
 File: dt-magyar.def 2013/09/10
 LaTeX Info: Redefining \datemagyar on input line 64.
 )
-\dt@a=\toks26
-\dt@b=\toks27
+\dt@a=\toks24
+\dt@b=\toks25
 ) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
@@ -266,7 +262,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count329
 \lst@gtempboxa=\box55
-\lst@token=\toks28
+\lst@token=\toks26
 \lst@length=\count330
 \lst@currlwidth=\dimen165
 \lst@column=\count331
@@ -340,7 +336,7 @@ Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count341
 ) 
 )) (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks27
 \pgfutil@tempdima=\dimen177
 \pgfutil@tempdimb=\dimen178
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -352,10 +348,10 @@ Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks30
 ))
 \pgf@x=\dimen179
 \pgf@y=\dimen180
@@ -373,9 +369,9 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \c@pgf@countb=\count343
 \c@pgf@countc=\count344
 \c@pgf@countd=\count345
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
 \pgf@sys@id@count=\count346
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
@@ -397,9 +393,9 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmath@dimen=\dimen189
 \pgfmath@count=\count349
 \pgfmath@box=\box58
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count350
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
@@ -482,8 +478,8 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen272
 \pgffor@skip=\dimen273
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -601,8 +597,8 @@ File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks41
-\pgfopts@list@add@b@toks=\toks42
+\pgfopts@list@add@a@toks=\toks39
+\pgfopts@list@add@b@toks=\toks40
 )
 (c:/texlive/2025/texmf-dist/tex/latex/elocalloc/elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
@@ -611,7 +607,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
  (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks43
+\@envbody=\toks41
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-09-02 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -621,17 +617,17 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 Package: xparse 2024-08-16 L3 Experimental document command parser
 ) (c:/texlive/2025/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks44
+\ID@toks=\toks42
 \ID@count=\count369
 )
-\ID@usercommands=\toks45
+\ID@usercommands=\toks43
 \safeloop@depth=\count370
 \safeRKloop@depth=\count371
 \forest@temp@dimen=\dimen296
 \forest@temp@count=\count372
 \forest@n=\count373
 \forest@temp@global@count=\count374
-\forest@temp@toks=\toks46
+\forest@temp@toks=\toks44
 \forest@temparray@M=\count375
 \forest@temparray@N=\count376
 \forest@global@temparray@M=\count377
@@ -642,8 +638,8 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@sort@m=\count381
 \forest@sort@k=\count382
 \forest@sort@p=\count383
-\bracket@content=\toks47
-\bracket@afterthought=\toks48
+\bracket@content=\toks45
+\bracket@afterthought=\toks46
 \forest@node@maxid=\count384
 \forest@process@left@M=\count385
 \forest@process@left@N=\count386
@@ -654,18 +650,18 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@process@result@M=\count391
 \forest@process@result@N=\count392
 \forest@process@n=\count393
-\forest@nodewalk@branch@toks=\toks49
-\forest@nodewalk@shortsteps@resolution=\toks50
-\forest@do@dynamics=\toks51
+\forest@nodewalk@branch@toks=\toks47
+\forest@nodewalk@shortsteps@resolution=\toks48
+\forest@do@dynamics=\toks49
 \forest@box=\box89
 \forest@xg=\dimen298
 \forest@yg=\dimen299
 \forest@xs=\dimen300
 \forest@ys=\dimen301
-\forest@pi@toks=\toks52
-\forest@segment@toks=\toks53
-\forest@PIi@toks=\toks54
-\forest@PIii@toks=\toks55
+\forest@pi@toks=\toks50
+\forest@segment@toks=\toks51
+\forest@PIi@toks=\toks52
+\forest@PIii@toks=\toks53
 \forest@copy@in=\read4
 \forest@copy@out=\write4
 \forest@externalize@max@outer@n=\count394
@@ -710,9 +706,9 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
  (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks56
-\t@pgfplots@tokb=\toks57
-\t@pgfplots@tokc=\toks58
+\t@pgfplots@toka=\toks54
+\t@pgfplots@tokb=\toks55
+\t@pgfplots@tokc=\toks56
 \pgfplots@tmpa=\dimen316
 \c@pgfplots@coordindex=\count398
 \c@pgfplots@scanlineindex=\count399
@@ -720,7 +716,7 @@ Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
 \c@pgfplotsarray@tmp=\count400
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
 \c@pgfplotstable@counta=\count401
-\t@pgfplotstable@a=\toks59
+\t@pgfplotstable@a=\toks57
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count402
  (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
@@ -744,14 +740,14 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen323
 \ar@mcellbox=\box92
 \extrarowheight=\dimen324
-\NC@list=\toks60
+\NC@list=\toks58
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box93
 )
 \rotheadsize=\dimen325
 \c@nlinenum=\count404
-\TeXr@lab=\toks61
+\TeXr@lab=\toks59
 ) (c:/texlive/2025/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
@@ -785,12 +781,12 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip60
 \enit@outerparindent=\dimen326
-\enit@toks=\toks62
+\enit@toks=\toks60
 \enit@inbox=\box94
 \enit@count@id=\count408
 \enitdp@description=\count409
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
@@ -1020,7 +1016,7 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@qlevel=\count539
 \csq@maxlvl=\count540
 \csq@tshold=\count541
-\csq@ltx@everypar=\toks63
+\csq@ltx@everypar=\toks61
  (c:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -1044,40 +1040,36 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip94
 \f@nch@widthC=\skip95
 \f@nch@widthR=\skip96
-\@temptokenb=\toks64
+\@temptokenb=\toks62
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'magyar'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 102.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 85.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (./main.aux
-
-LaTeX Warning: Label `fig:osszevetes' multiply defined.
-
-)
+) (%OUTDIR%/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1120,20 +1112,20 @@ LaTeX Font Info:    ... okay on input line 102.
 \scratchbox=\box95
 \nofMPsegments=\count543
 \nofMParguments=\count544
-\everyMPshowfont=\toks65
+\everyMPshowfont=\toks63
 \MPscratchCnt=\count545
 \MPscratchDim=\dimen328
 \MPnumerator=\count546
 \makeMPintoPDFobject=\count547
-\everyMPtoPDFconversion=\toks66
+\everyMPtoPDFconversion=\toks64
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 102.
- (./main.out) (./main.out)
+Package hyperref Info: Link coloring ON on input line 85.
+ (%OUTDIR%/main.out) (%OUTDIR%/main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -1155,15 +1147,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 102.
-Package biblatex Info: Reference segment=0 on input line 102.
+ (%OUTDIR%/main.bbl)
+Package biblatex Info: Reference section=0 on input line 85.
+Package biblatex Info: Reference segment=0 on input line 85.
  (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
 Package babel Info: 'magyar' activates 'magyar' shorthands.
-(babel)             Reported on input line 102.
+(babel)             Reported on input line 85.
  (././Cimlap.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 24.
@@ -1186,7 +1178,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 [3
 
-] (./main.toc
+] (%OUTDIR%/main.toc
 
 [4
 
@@ -1201,12 +1193,12 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 [6
 
 ]
-<Images/stone1.png, id=293, 766.865pt x 642.4pt>
+<Images/stone1.png, id=247, 766.865pt x 642.4pt>
 File: Images/stone1.png Graphic file (type png)
 <use Images/stone1.png>
 Package pdftex.def Info: Images/stone1.png  used on input line 58.
 (pdftex.def)             Requested size: 158.54152pt x 132.8005pt.
-<Images/crystal-clear.png, id=295, 1266.7325pt x 854.19125pt>
+<Images/crystal-clear.png, id=249, 1266.7325pt x 854.19125pt>
 File: Images/crystal-clear.png Graphic file (type png)
 <use Images/crystal-clear.png>
 Package pdftex.def Info: Images/crystal-clear.png  used on input line 68.
@@ -1214,12 +1206,12 @@ Package pdftex.def Info: Images/crystal-clear.png  used on input line 68.
 
 
 [7 <./Images/stone1.png>]
-<Images/energy-booster.png, id=307, 1266.7325pt x 854.19125pt>
+<Images/energy-booster.png, id=261, 1266.7325pt x 854.19125pt>
 File: Images/energy-booster.png Graphic file (type png)
 <use Images/energy-booster.png>
 Package pdftex.def Info: Images/energy-booster.png  used on input line 76.
 (pdftex.def)             Requested size: 339.72592pt x 229.0837pt.
-<Images/instant-relaxation.png, id=308, 1266.7325pt x 689.57625pt>
+<Images/instant-relaxation.png, id=262, 1266.7325pt x 689.57625pt>
 File: Images/instant-relaxation.png Graphic file (type png)
 <use Images/instant-relaxation.png>
 Package pdftex.def Info: Images/instant-relaxation.png  used on input line 84.
@@ -1227,12 +1219,12 @@ Package pdftex.def Info: Images/instant-relaxation.png  used on input line 84.
 
 
 [8 <./Images/crystal-clear.png (PNG copy)> <./Images/energy-booster.png (PNG copy)>]
-<Images/mental-magic.png, id=316, 1266.7325pt x 713.66624pt>
+<Images/mental-magic.png, id=270, 1266.7325pt x 713.66624pt>
 File: Images/mental-magic.png Graphic file (type png)
 <use Images/mental-magic.png>
 Package pdftex.def Info: Images/mental-magic.png  used on input line 92.
 (pdftex.def)             Requested size: 339.72592pt x 191.39659pt.
-<Images/stone-price.png, id=317, 628.59843pt x 624.08156pt>
+<Images/stone-price.png, id=271, 628.59843pt x 624.08156pt>
 File: Images/stone-price.png Graphic file (type png)
 <use Images/stone-price.png>
 Package pdftex.def Info: Images/stone-price.png  used on input line 99.
@@ -1247,7 +1239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
 
 [10 <./Images/stone-price.png>]
-<Images/ecg-to-emg.png, id=339, 2833.58624pt x 2910.875pt>
+<Images/ecg-to-emg.png, id=291, 2833.58624pt x 2910.875pt>
 File: Images/ecg-to-emg.png Graphic file (type png)
 <use Images/ecg-to-emg.png>
 Package pdftex.def Info: Images/ecg-to-emg.png  used on input line 164.
@@ -1257,7 +1249,7 @@ Package pdftex.def Info: Images/ecg-to-emg.png  used on input line 164.
 [11]
 
 [12 <./Images/ecg-to-emg.png>]
-<Images/usb-figure-2-1.png, id=360, 385.44pt x 326.21875pt>
+<Images/usb-figure-2-1.png, id=313, 385.44pt x 326.21875pt>
 File: Images/usb-figure-2-1.png Graphic file (type png)
 <use Images/usb-figure-2-1.png>
 Package pdftex.def Info: Images/usb-figure-2-1.png  used on input line 215.
@@ -1265,7 +1257,7 @@ Package pdftex.def Info: Images/usb-figure-2-1.png  used on input line 215.
 
 
 [13]
-<Images/usb-figure-2-2.png, id=369, 1027.84pt x 413.545pt>
+<Images/usb-figure-2-2.png, id=322, 1027.84pt x 413.545pt>
 File: Images/usb-figure-2-2.png Graphic file (type png)
 <use Images/usb-figure-2-2.png>
 Package pdftex.def Info: Images/usb-figure-2-2.png  used on input line 232.
@@ -1278,153 +1270,90 @@ Package pdftex.def Info: Images/usb-figure-2-2.png  used on input line 232.
 
 [16]
 
-[17]
-
-LaTeX Warning: Reference `fig:desc' on page 18 undefined on input line 378.
-
-(c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+[17] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 380.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 382.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [18]
-<Images/bobby_trifazisos.png, id=444, 808.01875pt x 552.0625pt>
-File: Images/bobby_trifazisos.png Graphic file (type png)
-<use Images/bobby_trifazisos.png>
-Package pdftex.def Info: Images/bobby_trifazisos.png  used on input line 427.
-(pdftex.def)             Requested size: 452.9679pt x 309.48141pt.
-
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 
 
-[20 <./Images/bobby_trifazisos.png>]
+[20]
 
-[21]
+[21])
 
-[22]
-<Images/összevetés.png, id=488, 1927.2pt x 1084.05pt>
-File: Images/összevetés.png Graphic file (type png)
-<use Images/összevetés.png>
-Package pdftex.def Info: Images/összevetés.png  used on input line 515.
-(pdftex.def)             Requested size: 452.9679pt x 254.78487pt.
+[22] (./Projekt_demo.tex) (./nyilatkozat.tex)
+
+[23
 
 
-[23 <./Images/összevetés.png>]
-<Images/palm-rotation.jpg, id=500, 1156.32pt x 449.88075pt>
-File: Images/palm-rotation.jpg Graphic file (type jpg)
-<use Images/palm-rotation.jpg>
-Package pdftex.def Info: Images/palm-rotation.jpg  used on input line 529.
-(pdftex.def)             Requested size: 452.9679pt x 176.22849pt.
+] (./koszonet.tex) (./licence.tex)
 
-
-[24 <./Images/palm-rotation.jpg>]
-<Images/technológiák.png, id=510, 1696.3375pt x 197.73875pt>
-File: Images/technológiák.png Graphic file (type png)
-<use Images/technológiák.png>
-Package pdftex.def Info: Images/technológiák.png  used on input line 544.
-(pdftex.def)             Requested size: 452.9679pt x 52.8018pt.
-
-
-[25 <./Images/technológiák.png>]
-
-[26]
-
-[27]
-
-[28]
-
-[29]
-
-[30]
-
-[31]
-
-[32])
-
-[33] (./Projekt_demo.tex) (./nyilatkozat.tex)
-
-[34
-
-
-] (./koszonet.tex
-
-[35
-
-]) (./licence.tex)
-
-[36
+[24
 
 
 ]
 
-[37
+[25
 
 ]
-Underfull \hbox (badness 2626) in paragraph at lines 128--128
+Underfull \hbox (badness 2626) in paragraph at lines 111--111
 []\T1/ptm/m/it/12 MicroPython - Py-thon for mic-ro-cont-rol-lers --- mic-ropy-thon.org\T1/ptm/m/n/12 . [][]$\T1/pcr/m/n/12 https : / /
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 128--128
+Underfull \hbox (badness 3965) in paragraph at lines 111--111
 []\T1/ptm/m/n/12 Jesal Shah. \T1/ptm/m/it/12 How USB Works: Int-ro-duc-ti-on (Part 1)\T1/ptm/m/n/12 . [][]$\T1/pcr/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 128--128
+Underfull \hbox (badness 4168) in paragraph at lines 111--111
 \T1/ptm/m/n/12 [Ac-ces-sed 06-11-2025]. \T1/ptm/m/sc/12 url\T1/ptm/m/n/12 : [][]$\T1/pcr/m/n/12 https : / / learn . adafruit . com /
  []
 
 
 
-[38]
+[26]
 
-[39]
+[27] (./fuggelek.tex)
 
-[40] (./fuggelek.tex)
-
-[41
+[28
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(./main.aux)
+(%OUTDIR%/main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2B81FD6ED24F8294E89BD3503D6A7757;7883.
+(rerunfilecheck)             Checksum: 7A2DCF1BBE03095D9B350B764147AAD3;6072.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58313 strings out of 467797
- 1362279 string characters out of 5435982
- 2997267 words of memory out of 5000000
- 85621 multiletter control sequences out of 15000+600000
+ 57676 strings out of 467797
+ 1352264 string characters out of 5435982
+ 2723854 words of memory out of 5000000
+ 85276 multiletter control sequences out of 15000+600000
  666977 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,2112b,3192s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (41 pages, 3597293 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on %OUTDIR%/main.pdf (28 pages, 2526543 bytes).
 PDF statistics:
- 1084 PDF objects out of 1200 (max. 8388607)
- 995 compressed objects within 10 object streams
- 440 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 600 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

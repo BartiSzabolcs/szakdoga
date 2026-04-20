@@ -1,16 +1,17 @@
-[1] Config.pm:328> INFO - This is Biber 2.21
-[2] Config.pm:331> INFO - Logfile is 'main.blg'
-[749] biber-MSWIN64:342> INFO - === 
-[1031] Biber.pm:421> INFO - Reading 'main.bcf'
-[1460] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
-[1558] Biber.pm:4487> INFO - Processing section 0
-[1643] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
-[1866] bibtex.pm:1713> INFO - LaTeX decoding ...
-[2095] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
-[2679] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2679] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2680] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
-[2769] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[2805] bbl.pm:779> INFO - Output to main.bbl
-[2806] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
-[2806] Biber.pm:134> INFO - WARNINGS: 1
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[103] biber-MSWIN64:342> INFO - === 
+[146] Biber.pm:421> INFO - Reading 'main.bcf'
+[247] Biber.pm:1002> INFO - Found 30 citekeys in bib section 0
+[259] Biber.pm:4487> INFO - Processing section 0
+[270] Biber.pm:4678> INFO - Looking for bibtex file 'hivatkozasok.bib' for section 0
+[365] bibtex.pm:1713> INFO - LaTeX decoding ...
+[431] bibtex.pm:1519> INFO - Found BibTeX data source 'hivatkozasok.bib'
+[578] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[578] UCollate.pm:68> INFO - Overriding locale 'hu-HU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[579] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'hu-HU'
+[598] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[614] bbl.pm:779> INFO - Output to main.bbl
+[615] Biber.pm:132> WARN - legacy month field 'Aug' in entry 'EMG-DEF' is not an integer - this will probably not sort properly.
+[615] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\Szabi\AppData\Local\Temp\biber_tmp_klUC\eaaf0593c0c7ecedf9c02ae8ef193713_28420.utf8, line 385, warning: 80 characters of junk seen at toplevel
+[615] Biber.pm:134> INFO - WARNINGS: 2
