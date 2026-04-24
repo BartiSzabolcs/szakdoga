@@ -13,44 +13,41 @@
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.1}Universal Serial Bus (USB)}{12}{subsubsection.1.9.1}%
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.2}USB architektúra}{13}{subsubsection.1.9.2}%
 \select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.3}USB sebessége}{13}{subsubsection.1.9.3}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.4}USB végpontok}{13}{subsubsection.1.9.4}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.5}kommunikáció}{14}{subsubsection.1.9.5}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.6}Tranzakciók}{15}{subsubsection.1.9.6}%
-\select@language {magyar} \contentsline {paragraph}{1. Token csomagok}{15}{section*.14}%
-\select@language {magyar} \contentsline {paragraph}{2. Adatcsomagok}{16}{section*.15}%
-\select@language {magyar} \contentsline {paragraph}{3. Handshake csomagok}{16}{section*.16}%
-\select@language {magyar} \contentsline {paragraph}{4. Különleges csomagok}{16}{section*.17}%
-\select@language {magyar} \contentsline {paragraph}{Tranzakciók típusai}{16}{section*.18}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.7}Descriptorok}{17}{subsubsection.1.9.7}%
-\select@language {magyar} \contentsline {paragraph}{Device Descriptor}{17}{section*.19}%
-\select@language {magyar} \contentsline {paragraph}{Configuration Descriptor}{17}{section*.20}%
-\select@language {magyar} \contentsline {paragraph}{Interface Association Descriptor (IAD)}{17}{section*.21}%
-\select@language {magyar} \contentsline {paragraph}{Interface Descriptor}{17}{section*.22}%
-\select@language {magyar} \contentsline {paragraph}{Endpoint Descriptor}{17}{section*.23}%
-\select@language {magyar} \contentsline {paragraph}{String Descriptor}{17}{section*.24}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.8}USB Enumeration and Configuration}{17}{subsubsection.1.9.8}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.9}USB osztályok}{18}{subsubsection.1.9.9}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.10}HID fogalma}{18}{subsubsection.1.9.10}%
-\select@language {magyar} \contentsline {section}{\numberline {2}A trifázisos izommozgás}{19}{section.2}%
-\select@language {magyar} \contentsline {section}{\numberline {3}A ballisztikus mozgás}{19}{section.3}%
-\select@language {magyar} \contentsline {section}{\numberline {4}A mozgás 3 fázisa}{19}{section.4}%
-\select@language {magyar} \contentsline {section}{\numberline {5}A gyakorlás hatása}{20}{section.5}%
-\select@language {magyar} \contentsline {section}{\numberline {6}A két elmélet}{20}{section.6}%
-\select@language {magyar} \contentsline {section}{\numberline {7}A flow állapota}{21}{section.7}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.1}A flow állapot jellemzői}{21}{subsection.7.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.2}A flow és a trifázisos izommozgás kapcsolata}{21}{subsection.7.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {7.3}A flow mérése}{22}{subsection.7.3}%
-\select@language {magyar} \contentsline {section}{\numberline {8}Kísérleti Módszertan és Jelfeldolgozás}{22}{section.8}%
-\select@language {magyar} \contentsline {subsection}{\numberline {8.1}Mérési elrendezés}{22}{subsection.8.1}%
-\select@language {magyar} \contentsline {section}{\numberline {9}Várt Eredmények és Hipotézisek}{23}{section.9}%
-\select@language {magyar} \contentsline {section}{\numberline {10}Mérés a gyakorlatban}{23}{section.10}%
-\select@language {magyar} \contentsline {subsection}{\numberline {10.1}A micropython hiányosságai}{25}{subsection.10.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {10.2}A Flow score}{31}{subsection.10.2}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {10.2.1}Agonista és Antagonista amplitúdójának az aránya}{31}{subsubsection.10.2.1}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {10.2.2}Agonista és antagonista izmok koaktivációja}{31}{subsubsection.10.2.2}%
-\select@language {magyar} \contentsline {section}{\numberline {11}A játék}{32}{section.11}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.1}Követelmények}{32}{subsection.11.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.2}Valós idejű jelfeldolgozás és hálózati zajszűrés}{32}{subsection.11.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {11.3}A játékmotor}{33}{subsection.11.3}%
-\select@language {magyar} \contentsline {section}{\numberline {12}License}{36}{section.12}%
-\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{37}{section*.31}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.4}USB osztályok}{13}{subsubsection.1.9.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {1.9.5}HID fogalma}{14}{subsubsection.1.9.5}%
+\select@language {magyar} \contentsline {section}{\numberline {2}A trifázisos izommozgás}{14}{section.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.1}A ballisztikus mozgás}{14}{subsection.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2}A mozgás 3 fázisa}{15}{subsection.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3}A gyakorlás hatása}{15}{subsection.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {2.3.1}A két elmélet}{16}{subsubsection.2.3.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3}A flow állapota}{16}{section.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1}A flow állapot jellemzői}{16}{subsection.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2}A flow és a trifázisos izommozgás kapcsolata}{16}{subsection.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3}A flow mérése}{17}{subsection.3.3}%
+\select@language {magyar} \contentsline {section}{\numberline {4}Kísérleti Módszertan és Jelfeldolgozás}{17}{section.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1}Mérési elrendezés}{17}{subsection.4.1}%
+\select@language {magyar} \contentsline {section}{\numberline {5}Várt Eredmények és Hipotézisek}{18}{section.5}%
+\select@language {magyar} \contentsline {section}{\numberline {6}Mérés a gyakorlatban}{18}{section.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.1}A micropython hiányosságai}{20}{subsection.6.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.2}A Flow score}{20}{subsection.6.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {6.2.1}Agonista és Antagonista amplitúdójának az aránya}{21}{subsubsection.6.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {6.2.2}Agonista és antagonista izmok koaktivációja}{21}{subsubsection.6.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {7}A játék}{21}{section.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.1}Követelmények}{21}{subsection.7.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.2}Valós idejű jelfeldolgozás és hálózati zajszűrés}{22}{subsection.7.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.3}A játékmotor}{22}{subsection.7.3}%
+\select@language {magyar} \contentsline {section}{Hivatkoz\'asok}{26}{section*.19}%
+\select@language {magyar} \contentsline {subsection}{A program forráskódja}{30}{section*.21}%
+\select@language {magyar} \contentsline {subsection}{Kommunikáció}{36}{section*.24}%
+\select@language {magyar} \contentsline {paragraph}{1. Token csomagok}{37}{section*.27}%
+\select@language {magyar} \contentsline {paragraph}{2. Adatcsomagok}{37}{section*.28}%
+\select@language {magyar} \contentsline {paragraph}{3. Handshake csomagok}{37}{section*.29}%
+\select@language {magyar} \contentsline {paragraph}{4. Különleges csomagok}{38}{section*.30}%
+\select@language {magyar} \contentsline {paragraph}{Tranzakciók típusai}{38}{section*.31}%
+\select@language {magyar} \contentsline {subsection}{Descriptorok}{38}{section*.32}%
+\select@language {magyar} \contentsline {paragraph}{Device Descriptor}{38}{section*.33}%
+\select@language {magyar} \contentsline {paragraph}{Configuration Descriptor}{38}{section*.34}%
+\select@language {magyar} \contentsline {paragraph}{Interface Association Descriptor (IAD)}{38}{section*.35}%
+\select@language {magyar} \contentsline {paragraph}{Interface Descriptor}{38}{section*.36}%
+\select@language {magyar} \contentsline {paragraph}{Endpoint Descriptor}{39}{section*.37}%
+\select@language {magyar} \contentsline {paragraph}{String Descriptor}{39}{section*.38}%

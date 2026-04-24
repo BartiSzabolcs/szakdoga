@@ -2,5 +2,391 @@
 
 
 \subsection*{A program forráskódja}
+\label{sec:fuggelek-kod}
+\addcontentsline{toc}{subsection}{A program forráskódja}
 A függelékbe kerülhetnek a hosszú táblázatok, vagy mondjuk egy programlista:
+
+\subsubsection*{Python kód az adatgyűjtéshez és elemzéshez}
+\begin{lstlisting}[language=Python]
+import board
+import analogbufio
+import array
+import ulab.numpy as np
+import time
+import usb_hid
+import usb_cdc
+
+# A csatlakoztatott USB HID eszközök közül kikeressük a gamepad-et.
+# A gamepad Usage Page-e 0x01 (Generic Desktop), Usage-e 0x05 (Game Pad).
+gamepad = None
+for device in usb_hid.devices:
+    if device.usage_page == 0x01 and device.usage == 0x05:
+        gamepad = device
+        break
+
+# A HID report 7 bájtos: az első bájt a Report ID, a többi az adatmezők.
+# A 4-es Report ID a custom gamepad descriptornak felel meg.
+report = bytearray(7)
+report[0] = 4
+
+def send_integer(value):
+    """Egyetlen értéket küld el az X tengely csatornaként (-127..127)."""
+    report[3] = value & 0xFF
+    gamepad.send_report(report)
+
+
+# Egy-egy olvasási ciklus mintaszáma (100 minta / 1000 Hz = 100 ms ablak)
+length = 100
+buffer1 = array.array("H", [0x0000] * length)
+buffer2 = buffer1[:]
+
+# Mindkét ADC csatornát 1000 Hz-es mintavételi rátával inicializáljuk.
+# GP26 = 1. szenzor (agonista izom), GP27 = 2. szenzor (antagonista izom)
+rate = 1000
+adcbuf1 = analogbufio.BufferedIn(board.GP26, sample_rate=rate)
+adcbuf2 = analogbufio.BufferedIn(board.GP27, sample_rate=rate)
+
+# A két csatorna nyers adatait tároljuk el utófeldolgozáshoz és kalibrációhoz.
+data = []
+calibration_data = []
+start_time = None
+minimal_activation_value = None
+
+# Az interleaved küldési buffer: a két csatorna mintái felváltva kerülnek bele
+# (combined[0], combined[2], ... = buffer1; combined[1], combined[3], ... = buffer2)
+combined = np.zeros(len(buffer1) * 2, dtype=np.uint16)
+
+
+try:
+    while True:
+        # Mindkét csatorna adatainak beolvasása a bufferekbe
+        adcbuf1.readinto(buffer1)
+        adcbuf2.readinto(buffer2)
+
+        # Az adatokat interleaved formátumban fűzzük össze, majd elküldjük
+        # a CDC adatcsatornán a PC-n futó vizualizációs programnak
+        combined[0::2] = buffer1
+        combined[1::2] = buffer2
+        usb_cdc.data.write(combined.tobytes())
+
+        # Az EMG aktivitás mértékét a szórással (std) becsüljük: nagyobb szórás
+        # = erősebb izomaktivitás. Az arányuk adja a flow-értéket.
+        value1 = np.std(np.array(buffer1))
+        value2 = np.std(np.array(buffer2))
+        if value2 != 0:
+            value = value1 / value2
+        else:
+            value = 1.0
+        data.append(value)
+
+        # Az első iterációban rögzítjük a kezdőidőpontot
+        if start_time is None:
+            start_time = time.time()
+        elapsed_time = round(time.time() - start_time)
+
+        # Az első 3 másodperc a kalibrációs fázis: ekkor a felhasználó
+        # relaxált állapotban van, az ekkor mért értékek adják az alapvonalat.
+        if elapsed_time == 3:
+            calibration_data = data[:]
+            minimal_activation_value = min(calibration_data)
+
+        # Kalibráció után összehasonlítjuk a jelenlegi értéket az alapvonallal
+        # és ennek megfelelő HID jelet küldünk a játéknak.
+        if elapsed_time > 3:
+            if value >= minimal_activation_value:
+                print(value)
+                send_integer(120)
+            else:
+                print(value)
+                send_integer(160)
+
+        # A csúszóablak méretét 200 mintában korlátozzuk a memória kímélése érdekében
+        if len(data) > 200:
+            data.pop(0)
+
+
+except Exception as e:
+    print("CRASHED:", e)
+
+finally:
+    # Az ADC erőforrásokat mindig fel kell szabadítani leálláskor
+    adcbuf1.deinit()
+    adcbuf2.deinit()
+
+\end{lstlisting}
+
+\subsubsection*{Rust kód a szenzoradatok kiolvasásához}
+\begin{lstlisting}[language=Rust]
+#![no_std]
+#![no_main]
+
+use panic_halt as _;
+use rp235x_hal as hal;
+use cortex_m::singleton;
+use hal::pac;
+use hal::dma::{single_buffer, DMAExt};
+use usb_device::{class_prelude::*, prelude::*};
+use usbd_serial::SerialPort;
+
+#[link_section = ".start_block"]
+#[used]
+pub static IMAGE_DEF: hal::block::ImageDef = hal::block::ImageDef::secure_exe();
+// RP2350 külső kristályoszcillátor frekvenciája
+const XTAL_FREQ_HZ: u32 = 12_000_000u32;
+
+#[rp235x_hal::entry]
+fn main() -> ! {
+    let mut pac = pac::Peripherals::take().unwrap();
+    let _core = cortex_m::Peripherals::take().unwrap();
+    let mut watchdog = hal::Watchdog::new(pac.WATCHDOG);
+    let clocks = hal::clocks::init_clocks_and_plls(
+        XTAL_FREQ_HZ,
+        pac.XOSC,
+        pac.CLOCKS,
+        pac.PLL_SYS,
+        pac.PLL_USB,
+        &mut pac.RESETS,
+        &mut watchdog,
+    )
+    .unwrap();
+
+    // SIO (Single-cycle I/O) blokk inicializálása -- szükséges a GPIO lábakhoz
+    let sio = hal::Sio::new(pac.SIO);
+    let usb_bus = UsbBusAllocator::new(hal::usb::UsbBus::new(
+        pac.USB,
+        pac.USB_DPRAM,
+        clocks.usb_clock,
+        true,
+        &mut pac.RESETS,
+    ));
+    let mut serial = SerialPort::new(&usb_bus);
+     let mut usb_dev = UsbDeviceBuilder::new(&usb_bus, UsbVidPid(0x16c0, 0x27dd))
+        .strings(&[StringDescriptors::default()
+            .manufacturer("HA8KDA")
+            .product("Serial port")
+            .serial_number("TEST")])
+        .unwrap()
+        .max_packet_size_0(64)
+        .unwrap()
+        .device_class(2)
+        .build();
+
+        // GPIO lábak inicializálása az IO_BANK0 perifériához
+        let pins = hal::gpio::Pins::new(
+            pac.IO_BANK0,
+            pac.PADS_BANK0,
+            sio.gpio_bank0,
+            &mut pac.RESETS,
+        );
+        // DMA vezérlő inicializálása; a csatornák (ch0, ch1, ...) a split után érhetők el
+        let dma = pac.DMA.split(&mut pac.RESETS);
+        // ADC inicializálása; GP26 = 1. EMG csatorna, GP27 = 2. EMG csatorna
+        let mut adc = hal::Adc::new(pac.ADC, &mut pac.RESETS);
+        let mut adc_pin_0 = hal::adc::AdcPin::new(pins.gpio26.into_floating_input()).unwrap();
+        let adc_pin_1 = hal::adc::AdcPin::new(pins.gpio27.into_floating_input()).unwrap();
+
+
+    // Statikus DMA puffer: 1000 minta * 2 csatorna (round-robin), azaz 500 minta/csatorna
+    let buf_for_samples = singleton!(: [u16; 1000] = [0; 1000]).unwrap();
+
+        // ADC FIFO konfigurálása: 48 MHz / 48000 = 1000 Hz összesített mintavételi ráta,
+        // round-robin 2 csatornán -> 500 Hz / csatorna; DMA-ra kapcsolva
+        let mut adc_fifo = adc
+        .build_fifo()
+        .clock_divider(47999, 0)
+        .set_channel(&mut adc_pin_0)
+        .round_robin((&adc_pin_0, &adc_pin_1))
+        .enable_dma()
+        .start_paused();
+
+        let mut dma_transfer = Some(
+            single_buffer::Config::new(dma.ch0, adc_fifo.dma_read_target(), buf_for_samples).start()
+        );
+        adc_fifo.resume();
+        let mut is_streaming = false;
+
+        loop {
+            // USB parancsok fogadása a PC-ről: 'W'/'w' = adatfolyam indítása, 'X'/'x' = leállítása
+            if usb_dev.poll(&mut [&mut serial]) {
+                let mut rx_buf = [0u8; 8];
+                if let Ok(count) = serial.read(&mut rx_buf) {
+                    for i in 0..count {
+                        match rx_buf[i] as char {
+                            'W' | 'w' => is_streaming = true,
+                            'X' | 'x' => is_streaming = false,
+                            _ => {}
+                        }
+                    }
+                }
+            }
+
+            // Ha a DMA átvitel befejezte a puffer feltöltését, feldolgozzuk az adatokat
+            if dma_transfer.as_ref().map_or(false, |t| t.is_done()) {
+                let transfer = dma_transfer.take().unwrap();
+                // A wait() lezárja az átvitelt és visszaadja a DMA csatornát,
+                // az ADC olvasási célpontot és a mintapuffert újrafelhasználáshoz
+                let (ch, adc_read_target, buf) = transfer.wait();
+
+                if is_streaming {
+                    // A u16 mintákat nyers bájtokként küldjük el (little-endian, 2 bájt/minta)
+                    let raw_ptr = buf.as_ptr() as *const u8;
+                    let byte_len = buf.len() * 2;
+                    let bytes = unsafe { core::slice::from_raw_parts(raw_ptr, byte_len) };
+
+                    let mut written = 0;
+                    while written < bytes.len() {
+                        if let Ok(n) = serial.write(&bytes[written..]) {
+                            written += n;
+                        } else {
+                            break;
+                        }
+                    }
+                }
+
+                /* Új DMA átvitel indítása ugyanazokkal az erőforrásokkal -- körkörösen fut */
+                dma_transfer = Some(
+                    single_buffer::Config::new(ch, adc_read_target, buf).start()
+                );
+            }
+
+
+
+
+        }
+}
+
+
+
+/// Program metadata for `picotool info`
+#[link_section = ".bi_entries"]
+#[used]
+pub static PICOTOOL_ENTRIES: [hal::binary_info::EntryAddr; 5] = [
+    hal::binary_info::rp_cargo_bin_name!(),
+    hal::binary_info::rp_cargo_version!(),
+    hal::binary_info::rp_program_description!(c"USB Serial Example"),
+    hal::binary_info::rp_cargo_homepage_url!(),
+    hal::binary_info::rp_program_build_attribute!(),
+];
+
+\end{lstlisting}
+
+\subsection*{Kommunikáció}
+\addcontentsline{toc}{subsection}{Kommunikáció}
+
+A kommunikáció az USB 2.0 esetében félig duplex, mivel továbbítás és fogadás egyszerre nem valósítható meg, a tranzakciókat a host indítja és a hubhoz kapcsolódó eszközök csak válaszolni tudnak rá.
+
+Amennyiben megnézzük az USB protokolt az idő szempontjából, egy frame sorozatot tartalmaz. Egy frame rendelkezik egy start of frame (SOF) csomaggal és egy vagy több tranzakcióval.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/usb-figure-2-2.png}
+	\caption{USB frame\cite{usb-article-2}}
+	\label{fig:usb-frame-appendix}
+\end{figure}
+
+Az ábra megmutatja, hogy egy tranzakció egy token csomagból, opcionális adatcsomagból és handshake csomagból áll.
+
+Egy csomag tartalmazhat:
+\begin{itemize}
+	\item Packet ID (PID) - azonosítás
+	\item Optional Endpoint Address - 4 bites cím
+	\item Optional Payload Data - továbbítandó adat egy kis része (0 - 1023 byte)
+	\item Optional CRC - hibavizsgálat
+\end{itemize}
+
+\subsubsection*{Tranzakciók}
+
+\paragraph{1. Token csomagok}
+
+A token csomagokat mindig a host küldi, és a forgalom irányításáért felelősek. A token csomag adja meg a tranzakció típusát.
+
+Ez a csomag így alakul:
+\begin{itemize}
+	\item Packet ID (PID)
+	\item 7-device address
+	\item 4-bit endpoint ID
+	\item 5-bit CRC
+\end{itemize}
+
+Három különböző változata van:
+
+\begin{itemize}
+	\item IN token packet - kérés az eszközről a hostnak
+	\item OUT token packet - megerősítés, a host eszközről, hogy készen áll a küldésre
+	\item SETUP token packet - konfigurációk és beállítások során kerül küldésre
+\end{itemize}
+
+Van egy token csomag típus, amit érdemes külön is említeni, ez az úgynevezett Start of Frame (SOF) csomag, ez egy olyan speciális csomag, ami tartalmaz egy 11-bites frame number nevű mezőt, ami mutatja a jelenlegi és eddig elküldött csomagok számát. A frame number mindig inkrementálódik, amikor megjelenik egy új SOF az adatsinen.
+
+\paragraph{2. Adatcsomagok}
+
+Ezek a csomagok tartalmazzák a továbbítandó adatnak egy részét.
+
+Fontos, hogy ezek kétféle ID-val rendelkezhetnek, ID0-val és ID1-el. Ennek hibavizsgálati okai vannak, mivel az adatcsomagok esetében a küldők alternálják ezeket, így ha két azonos ID-vel ellátott csomagot kapunk egymás után, akkor biztosra vehetjük, hogy beszélhetünk adatveszteségről.
+
+\paragraph{3. Handshake csomagok}
+
+Ezeket a csomagokat a tranzakciók zárására használjuk. Mindig a tranzakciót fogadó fél küldi ki ezeket.
+
+Lehetnek:
+
+\begin{itemize}
+	\item ACK - sikeres továbbítás
+	\item NAK - sikertelen továbbítás
+	\item STALL - hibajelzés
+	\item NYET - a fogadó fél még nem áll készen a csomag fogadására (csak High-Speed eszközök esetén)
+\end{itemize}
+
+\paragraph{4. Különleges csomagok}
+
+\begin{itemize}
+	\item PRE - hubok számára küldi ki a host, jelezve hogy a következő csomag low-speed lesz (csak Full/High-Speed eszközök esetén)
+	\item PING - NYET csomag beérkezése után ellenőrzi az eszköz elérhetőségét (csak High-Speed eszközök esetén)
+\end{itemize}
+
+\paragraph{Tranzakciók típusai}
+
+\begin{itemize}
+	\item Upstream/Read/IN - olyan tranzakciók, melyeket az eszközről küldünk a hostnak. A tranzakciót a host kezdeményezi, hogy adatot kérhessen egy IN csomaggal rendelkező eszköztől. Amennyiben az eszköz nem képes adatot fogadni, NAK-vel válaszol, majd később újra próbálja. Sikeres adatfogadás esetén egy handshakkel zárul.
+	\item Downstream/Write/OUT - olyan tranzakciók, melyeket a hostról küldünk az eszköznek. A tranzakciót a host kezdeményezi, hogy adatot küldhessen egy OUT csomaggal rendelkező eszköznek. Amennyiben az eszköz nem képes adatot fogadni, NAK-vel válaszol, majd később újra próbálja. Sikeres adatfogadás esetén egy handshakkel zárul.
+	\item Control - segít beazonosítani, beállítani, irányítani az eszközöket, és lehetővé teszi a host számára, hogy adatokat olvasson ki az eszközről, illetve beállítsa az eszköz címét.
+\end{itemize}
+
+\subsection*{Descriptorok}
+\addcontentsline{toc}{subsection}{Descriptorok}
+
+Az USB descriptorok személyigazolványként működnek az eszközök számára, hasonlóak egy használati utasításhoz.
+
+\paragraph{Device Descriptor}
+
+Amikor csatlakoztatjuk az eszközt, az első kérése a hostnak a device descriptor. Ez biztosítja a host számára az összes szükséges információt, amire szüksége van ahhoz, hogy megfelelően tudja kezelni az eszközt.
+
+\paragraph{Configuration Descriptor}
+
+A configuration descriptor megadja, hogy hogyan kommunikáljunk a host rendszerrel, például megadhatjuk az interfészek számát.
+
+\paragraph{Interface Association Descriptor (IAD)}
+
+Az IAD célja, hogy több interfészt csoportosítva egy funkcionáló egységet alkosson belőlük. A kezdeti fázisban az USB specifikációk nem támogatták a multi-interface funkciókat, ezért született meg az IAD.
+
+\paragraph{Interface Descriptor}
+
+Az interface descriptor egy olyan adatszerkezet, ami végpontok gyűjteményének is nevezhető egy USB eszközön belül.
+
+\paragraph{Endpoint Descriptor}
+
+Ez a descriptor alapvető információt tartalmaz egy konkrét végpontról. Minden végpontnak saját adatcsatornája van, lehet az IN vagy OUT.
+
+\paragraph{String Descriptor}
+
+Ez a descriptor emberek számára is érthető módon írja le az USB eszköz tulajdonságait. Opcionális, de erősen ajánlott, több nyelv esetében több string descriptorra van szükségünk.
+
+\subsubsection*{USB Enumeration and Configuration}
+
+Három fázisra bontható:
+
+\begin{itemize}
+	\item Dynamic Detection - az USB sebességét ismeri fel a csatlakozást követően
+	\item Enumeration and configuration - a host elkéri a device descriptort, ahonnan megtudja a maximális csomagmennyiséget, ezt követően új címet ad az eszköznek, majd elkéri a maradék descriptorokat is; ha ez is megvan, a host betölti a drivert.
+\end{itemize}
 

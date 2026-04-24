@@ -451,6 +451,146 @@
       \field{note}{[Accessed 19-10-2025]}
       \field{title}{{M}icro{P}ython - {P}ython for microcontrollers --- micropython.org}
     \endentry
+    \entry{AD8232}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=47c3be308e47c180511165e1e90a4299}{%
+           family={{HESTORE.hu}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \strng{bibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorbibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authornamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-04-23}
+      \field{title}{EKG-01-M, AD8232 EKG sziv monitor modul}
+      \verb{urlraw}
+      \verb https://www.hestore.hu/prod_10042052.html?gross_price_view=1&source=gads&lang=hu&gad_campaignid=17335669125
+      \endverb
+      \verb{url}
+      \verb https://www.hestore.hu/prod_10042052.html?gross_price_view=1&source=gads&lang=hu&gad_campaignid=17335669125
+      \endverb
+    \endentry
+    \entry{pico2w}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=47c3be308e47c180511165e1e90a4299}{%
+           family={{HESTORE.hu}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \strng{bibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorbibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authornamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-04-23}
+      \field{title}{RPI-PICO-2W, Raspberry Pi Pico 2 fejlesztoi panel, RP2350, Cortex M33, RISC-V, CYW43439 wireless chip}
+      \verb{urlraw}
+      \verb https://www.hestore.hu/prod_10047539.html
+      \endverb
+      \verb{url}
+      \verb https://www.hestore.hu/prod_10047539.html
+      \endverb
+    \endentry
+    \entry{szalagkabel}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=47c3be308e47c180511165e1e90a4299}{%
+           family={{HESTORE.hu}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \strng{bibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorbibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authornamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-04-23}
+      \field{title}{RC-40-10/MM, Szalagkabel csatlakozoval, 10cm, 40p, male-male (jumper)}
+      \verb{urlraw}
+      \verb https://www.hestore.hu/prod_10036629.html
+      \endverb
+      \verb{url}
+      \verb https://www.hestore.hu/prod_10036629.html
+      \endverb
+    \endentry
+    \entry{nyak}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=47c3be308e47c180511165e1e90a4299}{%
+           family={{HESTORE.hu}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \strng{bibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorbibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authornamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-04-23}
+      \field{title}{HS-005, Proba panel, univerzalis NYAK, forraszthato, 420p, RM2.54mm, 83x54mm}
+      \verb{urlraw}
+      \verb https://www.hestore.hu/prod_10043091.html
+      \endverb
+      \verb{url}
+      \verb https://www.hestore.hu/prod_10043091.html
+      \endverb
+    \endentry
+    \entry{usb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=47c3be308e47c180511165e1e90a4299}{%
+           family={{HESTORE.hu}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{fullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \strng{bibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorbibnamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authornamehash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhash}{47c3be308e47c180511165e1e90a4299}
+      \strng{authorfullhashraw}{47c3be308e47c180511165e1e90a4299}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-04-23}
+      \field{title}{AK-300110-010-S, USB A dugo - micro USB B micro dugo, 1m}
+      \verb{urlraw}
+      \verb https://www.hestore.hu/prod_10034535.html
+      \endverb
+      \verb{url}
+      \verb https://www.hestore.hu/prod_10034535.html
+      \endverb
+    \endentry
     \entry{AD8232_datasheet}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=9e35b5f4c8cbe2dda7c8b041ef261f70}{%
@@ -528,8 +668,8 @@
       \strng{authornamehash}{dd4bed2ff31087f38e1dc6494d09bca9}
       \strng{authorfullhash}{cb708b08d1dfd83024692cf7e70da878}
       \strng{authorfullhashraw}{cb708b08d1dfd83024692cf7e70da878}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Acquiring biopotentials with fidelity using low-cost circuits is a significant challenge in biomedical instrumentation. In this perspective, our goal is to investigate the characteristics of the widely applied AD8232®, an analog front-end for biopotential acquisition. We designed and evaluated circuits to acquire the most common biosignals: electrocardiogram (ECG), electromyogram (EMG), and electroencephalogram (EEG). Our findings show that the circuit is suitable for ECG and EMG instrumentation, although it has limitations for EEG signals, particularly concerning the gain. The entire project of the boards is also a contribution of this work as we intend to corroborate open-source do-it-yourself biomedical instrumentation.}
@@ -566,8 +706,8 @@
       \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
       \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-introduction-part-1}}
@@ -591,8 +731,8 @@
       \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
       \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-communication-protocol-part-2}}
@@ -616,13 +756,44 @@
       \strng{authorfullhash}{047a2b683e38d40afd11b93568d8a8a1}
       \strng{authorfullhashraw}{047a2b683e38d40afd11b93568d8a8a1}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.circuitbread.com/tutorials/how-usb-works-enumeration-and-configuration-part-3}}
       \field{note}{[Accessed 13-11-2025]}
       \field{title}{{H}ow {U}{S}{B} {W}orks: {E}numeration and configuration ({P}art 3)}
+    \endentry
+    \entry{DUALSHOCK4}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d8cdb451bb98f6b30f151f705f2a50fc}{%
+           family={{Sony Interactive Entertainment}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{fullhash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{fullhashraw}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{bibnamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{authorbibnamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{authornamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{authorfullhash}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \strng{authorfullhashraw}{d8cdb451bb98f6b30f151f705f2a50fc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DualShock 4 Wireless Controller}
+      \field{urlday}{8}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/
+      \endverb
+      \verb{url}
+      \verb https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/
+      \endverb
     \endentry
     \entry{customising-devices}{misc}{}{}
       \field{sortinit}{2}
@@ -792,8 +963,8 @@
       \strng{authornamehash}{e0aa420c3bfe36382d7e60a29507431a}
       \strng{authorfullhash}{e0aa420c3bfe36382d7e60a29507431a}
       \strng{authorfullhashraw}{e0aa420c3bfe36382d7e60a29507431a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Flow - The Psychology of optimal experience}
@@ -884,37 +1055,6 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0065260108004012
-      \endverb
-    \endentry
-    \entry{DUALSHOCK4}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=d8cdb451bb98f6b30f151f705f2a50fc}{%
-           family={{Sony Interactive Entertainment}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{fullhash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{fullhashraw}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{bibnamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{authorbibnamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{authornamehash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{authorfullhash}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \strng{authorfullhashraw}{d8cdb451bb98f6b30f151f705f2a50fc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{DualShock 4 Wireless Controller}
-      \field{urlday}{8}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{year}{2026}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/
-      \endverb
-      \verb{url}
-      \verb https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/
       \endverb
     \endentry
     \entry{amplitude1}{article}{}{}
